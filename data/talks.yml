@@ -1,0 +1,243 @@
+- id: sel2026-llm
+  date_start: 2026-01-26
+  date_end: 2026-01-29
+  authors: ["Ochoa Obeso, E.", "Machado de Souza, E."]
+  title: "Estereotipos sobre neurodivergencia en LLM: análisis sociolingüístico en español"
+  event: LIV Simposio de la Sociedad Española de Lingüística
+  host: CSIC-CCHS
+  kind: oral
+  lines: [technology, discourse]
+- id: sel2026-toponimos
+  date_start: 2026-01-26
+  date_end: 2026-01-29
+  authors: ["Ivanova, O.", "García-Piñuela, E.", "Machado de Souza, E."]
+  title: "La organización cognitiva de los topónimos en hablantes mayores con demencia: un estudio computacional"
+  event: LIV Simposio de la Sociedad Española de Lingüística
+  host: CSIC-CCHS
+  kind: oral
+  lines: [clinical, technology]
+- id: fod6-entonacion
+  date_start: 2026-02-11
+  date_end: 2026-02-13
+  authors: ["Machado de Souza, E."]
+  title: "Patrones entonativos en hablantes transfemeninas"
+  event: VI Jornadas Fonética Open Days
+  host: Universidad de Salamanca
+  kind: oral
+  lines: [transqueer, sociophonetics]
+- id: cife2026-acustica
+  date_start: 2026-01-13
+  date_end: 2026-01-15
+  authors: ["Machado de Souza, E."]
+  title: "Acústica y percepción de la feminidad en la voz transfemenina"
+  event: X Congreso Internacional de Fonética Experimental
+  host: Universidad de Córdoba
+  kind: oral
+  lines: [transqueer, sociophonetics]
+- id: ajl2025-eeg
+  date_start: 2025-10-01
+  date_end: 2025-10-03
+  authors: ["Machado de Souza, E."]
+  title: "¿Qué voz esperas escuchar? Procesamiento de incongruencias entre imagen y voz con EEG"
+  event: XXXIX Congreso Internacional de la Asociación de Jóvenes Lingüistas
+  host: Euskal Herriko Unibertsitatea
+  kind: oral
+  lines: [transqueer, sociophonetics]
+- id: innova2025-tradwife
+  date_start: 2025-09-24
+  date_end: 2025-09-26
+  authors: ["Machado de Souza, E."]
+  title: "La modulación vocal y el movimiento tradwife: el caso de Rocío Bueno"
+  event: IV Jornadas Internacionales de Jóvenes Investigadores INNOVA-Salamanca
+  host: Universidad de Salamanca
+  kind: oral
+  award: true
+  lines: [sociophonetics, discourse]
+- id: cielcyl2025-communikite
+  date_start: 2025-06-26
+  date_end: 2025-06-28
+  authors: ["Fernández Juncal, C.", "García Alonso, J. L.", "Machado de Souza, E."]
+  title: "Communikite: un rompehielos cultural y lingüístico"
+  event: VIII Congreso Internacional del Español en Castilla y León «Español para todos»
+  host: Junta de Castilla y León
+  kind: invited
+  lines: []
+- id: clg2025-redes
+  date_start: 2025-06-11
+  date_end: 2025-06-13
+  authors: ["Vergés Bonaventura, A.", "Machado de Souza, E."]
+  title: "Navegando entre redes de palabras. Accesibilidad léxica y cambios semánticos en el envejecimiento"
+  panel: "Lengua y demencia: el estudio de las alteraciones del lenguaje al servicio de la teoría lingüística"
+  event: XVI Congreso Internacional de Lingüística General
+  host: Universitat d'Alacant
+  kind: oral
+  lines: [clinical, technology]
+- id: clg2025-mcer
+  date_start: 2025-06-11
+  date_end: 2025-06-13
+  authors: ["Hernández González, G.", "Machado de Souza, E."]
+  title: "Inteligencia artificial aplicada a corpus de ELE: predictibilidad del nivel MCER"
+  event: XVI Congreso Internacional de Lingüística General
+  host: Universitat d'Alacant
+  kind: oral
+  lines: [technology]
+- id: cilc2025-patologizacion
+  date_start: 2025-05-15
+  date_end: 2025-05-17
+  authors: ["Machado de Souza, E."]
+  title: "De la patologización a la despatologización: transformaciones semánticas en la terminología clínica sobre diversidad sexual y de género"
+  event: 16th International Conference on Corpus Linguistics
+  host: Universidad de Salamanca
+  kind: oral
+  lines: [transqueer, discourse]
+- id: baal-lgas-2025
+  date_start: 2025-05-02
+  authors: ["Machado de Souza, E."]
+  title: "Discourse constructions of trans identities in Spanish social campaigns"
+  event: BAAL Language, Gender and Sexuality SIG annual event
+  host: Manchester Metropolitan University
+  kind: oral
+  lines: [transqueer, discourse]
+- id: aesla2025-neurodivergentes
+  date_start: 2025-04-02
+  date_end: 2025-04-04
+  authors: ["Machado de Souza, E."]
+  title: "Construcción de identidad y prácticas lingüísticas en comunidades neurodivergentes en línea"
+  event: 42.º Congreso Internacional de la Asociación Española de Lingüística Aplicada
+  host: Universitat de les Illes Balears
+  kind: oral
+  lines: [discourse]
+- id: aesla2025-odio
+  date_start: 2025-04-02
+  date_end: 2025-04-04
+  authors: ["Machado de Souza, E."]
+  title: "Desenmascarando el discurso de odio: análisis crítico de la representación de personas trans en discursos políticos y legislativos"
+  event: 42.º Congreso Internacional de la Asociación Española de Lingüística Aplicada
+  host: Universitat de les Illes Balears
+  kind: oral
+  lines: [transqueer, discourse]
+- id: fod5-voztrans
+  date_start: 2025-03-31
+  date_end: 2025-04-02
+  authors: ["Machado de Souza, E."]
+  title: "El caso de la voz trans: información identitaria y rasgos acústicos en la percepción del género"
+  event: V Jornadas Fonética Open Days
+  host: Universidad de Salamanca
+  kind: invited
+  lines: [transqueer, sociophonetics]
+- id: fod5-pausas
+  date_start: 2025-03-31
+  date_end: 2025-04-02
+  authors: ["Machado de Souza, E."]
+  title: "¿Para qué sirven las pausas? Un estado de la cuestión sobre la función de las pausas en la comunicación humana"
+  event: V Jornadas Fonética Open Days
+  host: Universidad de Salamanca
+  kind: invited
+  lines: [sociophonetics]
+- id: hsc-sig-2025
+  date_start: 2025-03-21
+  date_end: 2025-03-25
+  authors: ["Machado de Souza, E."]
+  title: "Dialogues in transition: Building bridges in the communicative relationship between trans people and healthcare professionals in Spain"
+  event: "HSC SIG March event: Health and science communication. Inequalities, inclusion and innovation"
+  host: Online
+  kind: oral
+  lines: [transqueer, clinical]
+- id: sel2026-acustica
+  date_start: 2026-01-26
+  date_end: 2026-01-29
+  authors: ["Machado de Souza, E."]
+  title: "Parámetros acústicos y percepción de la feminidad en voces transfemeninas: un estudio exploratorio en español peninsular"
+  event: LIV Simposio de la Sociedad Española de Lingüística
+  host: CSIC-CCHS
+  kind: oral
+  lines: [transqueer, sociophonetics]
+- id: sel2025-chatgpt
+  date_start: 2025-01-20
+  date_end: 2025-01-23
+  authors: ["Ivanova, O.", "Machado de Souza, E."]
+  title: "ChatGPT como herramienta de apoyo para los cuidadores de personas con demencia: un estudio de alcance, precisión y soporte comunicativo"
+  event: LII Simposio Internacional de la Sociedad Española de Lingüística
+  host: Universidad de Salamanca
+  kind: oral
+  lines: [clinical, technology]
+- id: lecturabilidad2024-mcer
+  date_start: 2024-11-07
+  date_end: 2024-11-08
+  authors: ["Hernández González, G.", "Machado de Souza, E."]
+  title: "Sesgos en la construcción de clasificadores de nivel MCER sobre corpus de estudiantes de ELE"
+  event: "Jornadas «El acceso a la información del texto escrito: hacia un objetivo de lecturabilidad accesible»"
+  host: Universidad de Salamanca
+  kind: poster
+  lines: [technology]
+- id: cilc2024-depresion
+  date_start: 2024-06-19
+  date_end: 2024-06-21
+  authors: ["Machado de Souza, E."]
+  title: "Redes sociales y la predicción de la depresión"
+  event: VII Congreso Internacional de Lingüística Clínica
+  host: Universidad de Salamanca
+  kind: oral
+  lines: [clinical, technology]
+- id: cilc2024-transicion
+  date_start: 2024-06-19
+  date_end: 2024-06-21
+  authors: ["Machado de Souza, E."]
+  title: "Cuando la voz no lo es todo: comunicación y pragmática en el proceso de transición"
+  event: VII Congreso Internacional de Lingüística Clínica
+  host: Universidad de Salamanca
+  kind: oral
+  lines: [transqueer, clinical]
+- id: fod4-biomarcadores
+  date_start: 2024-03-06
+  date_end: 2024-03-08
+  authors: ["Ivanova, O.", "Machado de Souza, E."]
+  title: "Aplicaciones de la fonética en el ámbito clínico: de variables discriminantes a biomarcadores precisos"
+  event: IV Jornadas Fonética Open Days
+  host: Universidad de Salamanca
+  kind: invited
+  lines: [clinical]
+- id: fod3-depresion
+  date_start: 2023-03-14
+  date_end: 2023-03-16
+  authors: ["Machado de Souza, E."]
+  title: "La depresión y el habla"
+  event: III Jornadas Fonética Open Days
+  host: Universidad de Salamanca
+  kind: invited
+  lines: [clinical]
+- id: sel2023-alzheimer
+  date_start: 2023-01-23
+  date_end: 2023-01-26
+  authors: ["Ivanova, O.", "Machado de Souza, E."]
+  title: "¿Predicen las alteraciones cognitivas la tipología del deterioro del lenguaje? Explorando los patrones de interacción cognición-lenguaje desde la perspectiva comparativa de las variantes espontánea y genética de la enfermedad de Alzheimer"
+  event: LI Simposio Internacional de la Sociedad Española de Lingüística
+  host: Universidad de Murcia
+  kind: oral
+  lines: [clinical]
+- id: sel2023-pragmatica
+  date_start: 2023-01-23
+  date_end: 2023-01-26
+  authors: ["Ivanova, O.", "Ochoa Obeso, E.", "Méndez Sanz, S.", "Machado de Souza, E."]
+  title: "Cuando los trastornos desafían la teoría: problema de la evaluación de la competencia pragmática en poblaciones clínicas"
+  event: LI Simposio Internacional de la Sociedad Española de Lingüística
+  host: Universidad de Murcia
+  kind: oral
+  lines: [clinical]
+- id: fod2-depresion
+  date_start: 2022-05-12
+  date_end: 2022-05-13
+  authors: ["Machado de Souza, E."]
+  title: "La depresión y el habla: características fonéticas de hablantes con depresión"
+  event: II Jornadas Fonética Open Days
+  host: Universidad de Salamanca
+  kind: invited
+  lines: [clinical]
+- id: jefji2021-preposiciones
+  date_start: 2021-07-09
+  authors: ["Machado de Souza, E."]
+  title: "Reestructuración del paradigma preposicional del español de Cataluña: los casos de a y en en usos locativos y temporales"
+  event: VII Jornada de Estudios Filológicos para Jóvenes Investigadores
+  host: Universidad de Salamanca
+  kind: oral
+  lines: []

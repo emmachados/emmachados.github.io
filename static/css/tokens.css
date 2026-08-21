@@ -1,0 +1,90 @@
+:root {
+  --font-display: "Bodoni Moda", ui-serif, Georgia, serif;
+  --font-body:    "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --text-xs:   0.74rem;
+  --text-sm:   0.86rem;
+  --text-base: 1.0rem;
+  --text-md:   1.2rem;
+  --text-lg:   1.45rem;
+  --text-xl:   1.9rem;
+  --text-2xl:  2.4rem;
+  --text-name:    clamp(2.8rem, 7vw, 6.4rem);
+  --text-display: clamp(2rem, 3.4vw + 0.6rem, 3.1rem);
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --page-gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --measure:      64ch;
+  --measure-wide: 74ch;
+  --rail:         14.5rem;
+  --portrait:     22rem;
+
+  --rule-hair:  1px;
+  --rule-thick: 2px;
+  --rule-heavy: 4px;
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 110ms;
+  --dur-short: 200ms;
+
+  --z-sticky: 200;
+
+  --color-paper:      oklch(96.5% 0.018 320);
+  --color-paper-2:    oklch(93.0% 0.030 320);
+  --color-paper-3:    oklch(88.0% 0.046 322);
+  --color-slab:       oklch(27.0% 0.090 330);
+  --color-slab-2:     oklch(33.0% 0.095 335);
+  --color-slab-ink:   oklch(95.0% 0.020 330);
+  --color-slab-rule:  oklch(45.0% 0.070 330);
+  --color-rule:       oklch(80.0% 0.038 320);
+  --color-neutral:    oklch(52.0% 0.032 320);
+  --color-muted:      oklch(41.0% 0.038 320);
+  --color-ink:        oklch(21.0% 0.046 318);
+  --color-accent:     oklch(52.0% 0.200 350);
+  --color-accent-ink: oklch(97.0% 0.015 340);
+  --color-mark:       oklch(88.0% 0.070 340);
+  --color-focus:      oklch(52.0% 0.200 350);
+  --color-curve:      oklch(72.0% 0.140 340);
+
+  --sprite-line:  oklch(58% 0.140 350);
+  --sprite-body:  oklch(82% 0.090 350);
+  --sprite-shade: oklch(70% 0.110 350);
+  --sprite-eye:   oklch(25% 0.080 330);
+  --sprite-light: oklch(97% 0.020 340);
+
+  --color-paper-print: #fff;
+  --color-ink-print:   #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper:      oklch(16.0% 0.040 320);
+    --color-paper-2:    oklch(21.0% 0.048 320);
+    --color-paper-3:    oklch(26.0% 0.058 322);
+    --color-slab:       oklch(24.0% 0.075 332);
+    --color-slab-2:     oklch(29.0% 0.082 335);
+    --color-slab-ink:   oklch(95.0% 0.020 330);
+    --color-slab-rule:  oklch(45.0% 0.070 330);
+    --color-rule:       oklch(34.0% 0.045 320);
+    --color-neutral:    oklch(66.0% 0.030 320);
+    --color-muted:      oklch(76.0% 0.030 322);
+    --color-ink:        oklch(94.0% 0.022 330);
+    --color-accent:     oklch(78.0% 0.150 350);
+    --color-accent-ink: oklch(18.0% 0.050 330);
+    --color-mark:       oklch(38.0% 0.100 340);
+    --color-focus:      oklch(78.0% 0.150 350);
+    --color-curve:      oklch(52.0% 0.120 340);
+  }
+  body { font-weight: 350; }
+}

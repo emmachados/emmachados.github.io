@@ -1,0 +1,115 @@
+- id: predoc-usal
+  role:
+    en: PhD Candidate
+    es: Investigadora predoctoral en formación
+  org: Universidad de Salamanca
+  start: 2024-11
+  end: null
+  detail:
+    en:
+      - Design, collection, and acoustic and statistical analysis of speech corpora.
+      - Teaching in «Habla y lenguaje» (Grado en Audiología) and «Lingüística general» (Grado en Estudios Ingleses).
+      - Member of the Erasmus+ project COMMUNIKITE.
+      - Responsible for the K6 package on intercultural experiences.
+      - Principal investigator of INCLUSIVE, on inclusive communication with trans and non-binary students.
+    es:
+      - Diseño, recogida y análisis acústico y estadístico de corpus de habla.
+      - Docencia en «Habla y lenguaje» (Grado en Audiología) y «Lingüística general» (Grado en Estudios Ingleses).
+      - Miembro del proyecto Erasmus+ COMMUNIKITE.
+      - Responsable del paquete K6, dedicado a las experiencias interculturales.
+      - Investigadora principal de INCLUSIVE, dedicado a las prácticas de comunicación inclusiva con estudiantes trans y no binaries.
+
+- id: perte-usal
+  role:
+    en: Research support staff, PERTE Nueva Economía de la Lengua
+    es: Personal de apoyo a la investigación, PERTE Nueva Economía de la Lengua
+  org: Universidad de Salamanca
+  start: 2024-06
+  end: 2024-11
+  detail:
+    en:
+      - Creation, analysis and exploitation of Spanish language corpora.
+      - Compilation of glossaries, covering lemmas, senses, definitions and examples.
+      - Organization of scientific events tied to the PERTE.
+    es:
+      - Creación, análisis y explotación de corpus lingüísticos del español.
+      - Elaboración de glosarios, con lemas, acepciones, definiciones y ejemplos.
+      - Organización de eventos científicos vinculados al PERTE.
+
+- id: viu-supervision
+  role:
+    en: Master's dissertation supervisor
+    es: Directora de Trabajos de Fin de Máster
+  org: Universidad Internacional de Valencia
+  place:
+    en: remote
+    es: en remoto
+  start: 2024-01
+  end: 2024-10
+  detail:
+    en:
+      - Four dissertations supervised on the MA in Teaching Spanish as a Foreign Language.
+      - Ten examining boards for the defenses.
+    es:
+      - Dirección de cuatro Trabajos de Fin de Máster en el Máster en Enseñanza del Español como Lengua Extranjera.
+      - Participación en diez tribunales de defensa.
+
+- id: accem
+  role:
+    en: Spanish teacher for refugees and applicants for international protection
+    es: Profesora de español para personas refugiadas y solicitantes de Protección Internacional
+  org: Accem Salamanca
+  start: 2022-08
+  end: 2024-06
+  detail:
+    en:
+      - Adapted Spanish classes and preparation courses for the CCSE citizenship test, 1932 teaching hours.
+      - Workshops on settling in Spain, digital skills, written expression and equality.
+    es:
+      - Clases de español adaptadas y cursos de preparación del examen CCSE para la nacionalidad, 1932 horas de docencia.
+      - Talleres sobre adaptación a la vida en España, competencias digitales, expresión escrita e igualdad.
+
+- id: cows-l2h
+  role:
+    en: Member of the Universidad de Salamanca team, COWS-L2H corpus
+    es: Miembro del equipo de la Universidad de Salamanca, corpus COWS-L2H
+  org: Universidad de Salamanca / University of California, Davis
+  place:
+    en: remote
+    es: en remoto
+  start: 2023-02
+  end: 2023-08
+  detail:
+    en:
+      - Correction and error tagging of compositions by American learners of Spanish.
+    es:
+      - Corrección y etiquetado de errores en composiciones de estudiantes estadounidenses de español.
+
+- id: cursos-internacionales
+  role:
+    en: Spanish teacher for international students
+    es: Profesora de español para estudiantes internacionales
+  org: Cursos Internacionales, Universidad de Salamanca
+  start: 2022-07
+  end: 2022-07
+  detail:
+    en:
+      - Intensive Spanish for A2 to B2 groups, with materials written for teenage learners.
+    es:
+      - Español intensivo para grupos de A2 a B2, con materiales propios para estudiantes adolescentes.
+
+- id: corpes-xxi
+  role:
+    en: Member of the Universidad de Salamanca team, CORPES XXI
+    es: Miembro del equipo de la Universidad de Salamanca, CORPES XXI
+  org: Real Academia Española
+  place:
+    en: remote
+    es: en remoto
+  start: 2021-11
+  end: 2023-01
+  detail:
+    en:
+      - Close reading and collation of electronic texts, internal and external coding.
+    es:
+      - Lectura minuciosa y cotejo de textos electrónicos, codificación interna y externa.

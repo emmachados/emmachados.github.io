@@ -1,0 +1,169 @@
+- id: ajl2026
+  kind: chair
+  featured: true
+  role:
+    en: Chair, Organizing Committee
+    es: Presidenta del Comité Organizador
+  of: XL Congreso Internacional de la Asociación de Jóvenes Lingüistas
+  org: Asociación de Jóvenes Lingüistas
+  years: [2026]
+  url: https://ajlsalamanca2026.usal.es/
+
+- id: maricorners5
+  kind: committee
+  role:
+    en: Scientific Committee
+    es: Comité Científico
+  of: 5.º Congreso Internacional de Estudios Interdisciplinares LGTBIA+ y Queer
+  org: MariCorners
+  years: [2026]
+  url: https://maricorners.es/maricorners2026_/maricorners2026/
+
+- id: foro-investigacion-linguistica
+  kind: committee
+  role:
+    en: Organizing Committee
+    es: Comité Organizador
+  of: I Foro de Investigación Lingüística
+  org: Universidad de Salamanca
+  years: [2026]
+
+- id: seminarios-filologicos
+  kind: committee
+  role:
+    en: Organizing Committee
+    es: Comité Organizador
+  of: V y VI Seminarios Filológicos Predoctorales
+  org: Universidad de Salamanca
+  years: [2025, 2026]
+
+- id: fod5-comite
+  kind: committee
+  role:
+    en: Organizing Committee
+    es: Comité Organizador
+  of: V Jornadas Fonética Open Days
+  org: Universidad de Salamanca
+  years: [2025]
+
+- id: cilc7-comite
+  kind: committee
+  role:
+    en: Organizing Committee
+    es: Comité Organizador
+  of: VII Congreso Internacional de Lingüística Clínica
+  org: Universidad de Salamanca
+  years: [2024]
+  url: https://eventum.usal.es/102797/detail/vii-congreso-internacional-de-linguistica-clinica-cilc2024.html
+
+- id: lecturabilidad-comite
+  kind: committee
+  role:
+    en: Organizing Committee
+    es: Comité Organizador
+  of: "Jornadas «El acceso a la información del texto escrito: hacia un objetivo de lecturabilidad accesible»"
+  org: Universidad de Salamanca
+  years: [2024]
+
+- id: panel-sel2026
+  kind: panel
+  panel_title: "Lengua, género y sexualidad: perspectivas desde la lingüística queer/cuir"
+  role:
+    en: Panel convenor
+    es: Coordinación de panel temático
+  of: LIV Simposio de la Sociedad Española de Lingüística
+  org: Sociedad Española de Lingüística
+  url: https://www.sel.edu.es/liv-simposio-madrid-2026/horario-y-libro-de-resumenes/
+  years: [2026]
+  convened_with: []
+
+- id: panel-clg2025
+  kind: panel
+  panel_title: "Lengua y demencia: el estudio de las alteraciones del lenguaje al servicio de la teoría lingüística"
+  role:
+    en: Panel convenor
+    es: Coordinación de panel temático
+  of: XVI Congreso Internacional de Lingüística General
+  org: Universitat d'Alacant
+  url: https://cilg2025.ua.es/uploads/site/files/Libro_Resumenes_CILG25.pdf
+  years: [2025]
+  convened_with: ["Olga Ivanova"]
+
+- id: panel-fod5-queer
+  kind: panel
+  panel_title: "Fonética queer"
+  role:
+    en: Convenor of the queer phonetics panel
+    es: Coordinación del panel de fonética queer
+  of: V Jornadas Fonética Open Days
+  org: Universidad de Salamanca
+  years: [2025]
+  convened_with: []
+
+- id: revisora-maricorners
+  kind: review
+  role:
+    en: Reviewer
+    es: Revisora
+  of: "MariCorners: Revista de Estudios Interdisciplinares LGTBIA+ y Queer"
+  org: Universidad de Valladolid
+  url: https://revistas.uva.es/index.php/maricorners
+  years: [2026]
+
+- id: revisora-raled
+  kind: review
+  role:
+    en: Reviewer
+    es: Revisora
+  of: Revista Latinoamericana de Estudios del Discurso
+  org: Asociación Latinoamericana de Estudios del Discurso
+  url: https://periodicos.unb.br/index.php/raled
+  years: [2026]
+
+- id: corpes-rae
+  kind: corpus
+  role:
+    en: Coder, Universidad de Salamanca team
+    es: Codificadora del equipo de la Universidad de Salamanca
+  of: Corpus del Español del Siglo XXI
+  org: Real Academia Española
+  years: [2022, 2023]
+  detail:
+    en: Close reading of electronic texts against their originals, internal and external coding, and removal of material that could not be coded.
+    es: Lectura atenta de textos electrónicos y cotejo con los originales, codificación interna y externa, y retirada del material no codificable.
+
+- id: mujeres-usal
+  kind: outreach
+  role:
+    en: Team member
+    es: Miembro del equipo
+  of: "Mujeres que cambian la USAL"
+  org: Universidad de Salamanca
+  years: [2025, 2026]
+  detail:
+    en: Two projects bringing secondary-school students into linguistics research, each running over two months with a class of sixteen-year-olds.
+    es: Dos proyectos para acercar la investigación lingüística al alumnado de secundaria, de dos meses cada uno, con grupos de estudiantes de dieciséis años.
+
+- id: kite-exposicion
+  kind: outreach
+  role:
+    en: Co-creation and organization of the exhibition
+    es: Creación y organización de la exposición
+  of: "«Kite: un rompehielos cultural y lingüístico»"
+  org: Centro Internacional del Español
+  years: [2024]
+  detail:
+    en: "Shown at the conference «Retos en la enseñanza de la lengua: Secundaria y migración»."
+    es: "Expuesta en las jornadas «Retos en la enseñanza de la lengua: Secundaria y migración»."
+
+- id: cows-l2h
+  kind: corpus
+  role:
+    en: Coder, Universidad de Salamanca team
+    es: Codificadora del equipo de la Universidad de Salamanca
+  of: "COWS-L2H, Corpus of Written Spanish of L2 and Heritage Speakers"
+  org: Universidad de Salamanca / University of California, Davis
+  years: [2023]
+  detail:
+    en: Correction and error tagging of compositions by American learners of Spanish, under an Article 83 contract with UC Davis.
+    es: Corrección y etiquetado de errores en composiciones de aprendientes estadounidenses de español, en un contrato del artículo 83 con UC Davis.

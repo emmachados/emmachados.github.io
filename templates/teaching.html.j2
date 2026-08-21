@@ -1,0 +1,46 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ t.teaching.title }}, {{ site.name }}{% endblock %}
+{% block main %}
+<div class="doc">
+<h1 class="doc__title">{{ t.teaching.title }}</h1>
+<p class="doc__intro">{{ t.teaching.intro }}</p>
+
+{% if teaching | selectattr('materials') | list %}
+<p class="aside">{{ t.teaching.materials_note }}</p>
+{% endif %}
+
+{% for kind in ['university', 'course', 'other'] %}
+{% set items = teaching | selectattr('kind', 'equalto', kind) | list %}
+{% if items %}
+<section class="sec">
+  <h2 class="sec__title">{{ t.teaching.kind[kind] }}</h2>
+  <ul class="entries">
+    {% for e in items %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{{ e.years }}{% if e.dates %}<span class="entry__dates">{{ e.dates[lang] }}</span>{% endif %}</p>
+      <div class="entry__body">
+        <p class="entry__title">{{ e.course or e.role[lang] }}</p>
+        <p class="entry__meta entry__meta--stack">
+          {% if e.course %}<span class="f f--role">{{ e.role[lang] }}</span>{% endif %}{% if e.module %}<span class="f f--module">{{ e.module }}</span>{% endif %}{% if e.programme %}<span class="f f--venue">{{ e.programme }}</span>{% endif %}<span class="f f--org">{{ e.institution }}</span>
+        </p>
+        {% if e.detail %}<p class="entry__detail">{{ e.detail[lang] }}</p>{% endif %}
+        {% if e.hours %}<p class="entry__marks"><span class="mark mark--hours">{{ e.hours }} {{ t.teaching.hours }}</span></p>{% endif %}
+        {% for c in courses if c.teaching_id == e.id %}
+        <p class="materials"><a href="{{ path_for(c.page) }}">{{ t.teaching.course_page }}</a></p>
+        {% endfor %}
+        {% if e.materials %}
+        <ul class="materials">
+          {% for m in e.materials %}
+          <li><a href="/static/teaching/{{ m.file }}" download>{{ m.label[lang] }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endfor %}
+</div>
+{% endblock %}

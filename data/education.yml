@@ -1,0 +1,34 @@
+entries:
+  - id: phd
+    degree:
+      en: PhD in Linguistics
+      es: "Doctorado en Español: Investigación Avanzada en Lengua y Literatura"
+    institution: Universidad de Salamanca
+    year_start: 2023
+    year_end: null
+    detail:
+      en: Perception and production of transfeminine voices in Peninsular Spanish, supervised by Olga Ivanova, Juan José García Meilán and María Carmen Fernández Juncal. Expected 2027.
+      es: Percepción y producción de voces transfemeninas en español peninsular, bajo la dirección de Olga Ivanova, Juan José García Meilán y María Carmen Fernández Juncal. Finalización prevista en 2027.
+
+  - id: musale
+    degree:
+      en: MA in Teaching Spanish as a Foreign Language
+      es: Máster Universitario en Enseñanza del Español como Lengua Extranjera
+    institution: Universidad de Salamanca
+    year_start: 2021
+    year_end: 2022
+    detail:
+      en: First in cohort, awarded the Premio Extraordinario de Fin de Máster.
+      es: Primera de la promoción y Premio Extraordinario de Fin de Máster.
+
+  - id: grado
+    degree:
+      en: BA in Hispanic Philology
+      es: Grado en Filología Hispánica
+    institution: Universidad de Salamanca
+    year_start: 2017
+    year_end: 2021
+    work_label:
+      en: Trabajo de Fin de Grado con Matrícula de Honor
+      es: Trabajo de Fin de Grado con Matrícula de Honor
+    work_title: "La depresión y el habla, características fonéticas de hablantes de español con depresión mayor"

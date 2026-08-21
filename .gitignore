@@ -1,0 +1,10 @@
+.venv/
+_site/
+__pycache__/
+*.pyc
+*.xlsx
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/build/
+.DS_Store

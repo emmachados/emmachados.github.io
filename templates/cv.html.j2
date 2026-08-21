@@ -1,0 +1,166 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ t.cv.title }}, {{ site.name }}{% endblock %}
+{% block main %}
+<div class="doc">
+<h1 class="doc__title">{{ t.cv.title }}</h1>
+<p class="doc__intro">
+  <a class="tlink" href="machado-de-souza-cv-{{ lang }}.pdf">{{ t.cv.download }}</a>
+</p>
+
+<dl class="defs">
+  <div><dt>{{ t.cv.position }}</dt><dd>{{ t.position[site.position_key] }}, {{ site.department }}, {{ site.institution }}</dd></div>
+  <div><dt>ORCID</dt><dd><a href="https://orcid.org/{{ site.profiles[0].value }}">{{ site.profiles[0].value }}</a></dd></div>
+  <div><dt>{{ t.ui.email }}</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+</dl>
+
+{% if education %}
+<section class="sec">
+  <h2 class="sec__title">{{ t.education.title }}</h2>
+  <ul class="entries">
+    {% for e in education %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{{ e.year_start }}{% if e.year_end %}-{{ e.year_end }}{% else %}-{% endif %}</p>
+      <div class="entry__body">
+        <p class="entry__title">{{ e.degree[lang] }}</p>
+        <p class="entry__meta entry__meta--stack"><span class="f">{{ e.institution }}</span>{% if not e.year_end %}<span class="f">{{ t.education.in_progress }}</span>{% endif %}</p>
+        {% if e.detail %}<p class="entry__detail">{{ e.detail[lang] }}</p>{% endif %}
+        {% if e.work_title %}<p class="entry__detail">{{ e.work_label[lang] }}: <em>{{ e.work_title }}</em>.</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.cv.experience }}</h2>
+  <ul class="entries">
+    {% for e in experience %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{{ year_span(e.start, e.end) }}</p>
+      <div class="entry__body">
+        <p class="entry__title">{{ e.role[lang] }}</p>
+        <p class="entry__meta entry__meta--stack"><span class="f">{{ e.org }}</span>{% if e.place %}<span class="f">{{ e.place[lang] }}</span>{% endif %}</p>
+        {% if e.detail %}
+        <ul class="bullets">
+          {% for d in e.detail[lang] %}<li>{{ d }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.cv.dissertation }}</h2>
+  <ul class="entries">
+    <li class="entry">
+      <p class="entry__title">{{ projects.dissertation.topic[lang] }}</p>
+      <p class="entry__meta entry__meta--stack">
+        <span class="f f--org">{{ projects.dissertation.institution }}</span><span class="f f--sup">{{ t.cv.supervised_by }} {{ authors(projects.dissertation.supervisors) }}</span>
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.cv.projects }}</h2>
+  {% for scope in project_scopes %}
+  {% set items = projects.projects | selectattr('scope', 'equalto', scope) | list %}
+  {% if items %}
+  <h3 class="sec__sub">{{ t.cv.scope[scope] }}</h3>
+  <ul class="entries">
+    {% for p in items %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{% if p.year_start %}{{ p.year_start }}{% if p.year_end and p.year_end != p.year_start %}–{{ p.year_end }}{% endif %}{% endif %}</p>
+      <div class="entry__body">
+        <p class="entry__title">{{ p.title }}</p>
+        <p class="entry__meta entry__meta--stack"><span class="f f--role">{{ p.role[lang] }}</span>{% if p.pi %}<span class="f f--pi">{{ t.cv.pi }} {{ p.pi }}</span>{% endif %}{% if p.funder %}<span class="f f--funder">{{ p.funder }}</span>{% endif %}{% if p.contract %}<span class="f f--contract">{{ p.contract[lang] }}</span>{% endif %}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endfor %}
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.publications.title }}</h2>
+  <ul class="entries">
+    {% for pub in publications %}
+    <li class="entry"><p class="entry__cite">{{ apa(pub) | safe }}</p></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.talks.title }}</h2>
+  <ul class="entries">
+    {% for talk in talks %}
+    <li class="entry">
+      <p class="entry__cite">
+        {{ authors(talk.authors) }} ({{ date_range(talk.date_start, talk.date_end) }}).
+        <strong class="entry__t">{{ talk.title }}</strong>. <span class="entry__venue">{{ talk.event }}</span>, {{ talk.host }}.
+      </p>
+      {% if talk.kind in t.talks.kind %}
+      <p class="entry__marks"><span class="mark">{{ t.talks.kind[talk.kind] }}</span></p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.teaching.title }}</h2>
+  <ul class="entries">
+    {% for e in teaching %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{{ e.years }}</p>
+      <div class="entry__body">
+        <p class="entry__title">{{ e.course or e.role[lang] }}</p>
+        <p class="entry__meta entry__meta--stack">{% if e.course %}<span class="f">{{ e.role[lang] }}</span>{% endif %}{% if e.programme %}<span class="f">{{ e.programme }}</span>{% endif %}<span class="f">{{ e.institution }}</span>{% if e.hours %}<span class="f">{{ e.hours }} {{ t.teaching.hours }}</span>{% endif %}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.service.title }}</h2>
+  {% for kind in service_kinds %}
+  {% set items = service | selectattr('kind', 'equalto', kind) | list %}
+  {% if items %}
+  <h3 class="sec__sub">{{ t.service.kind[kind] }}</h3>
+  <ul class="entries">
+    {% for e in items %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{{ e.years | join(', ') }}</p>
+      <div class="entry__body">
+        <p class="entry__title">{{ e.panel_title or e.of }}</p>
+        <p class="entry__meta entry__meta--stack">{% if e.panel_title %}<span class="f">{{ e.of }}</span>{% endif %}<span class="f">{{ e.role[lang] }}</span>{% if e.convened_with %}<span class="f">{{ t.service.with_label }} {{ authors(e.convened_with) }}</span>{% endif %}<span class="f">{{ e.org }}</span></p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endfor %}
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.cv.awards }}</h2>
+  <ul class="entries">
+    {% for a in awards %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{{ a.years | join(', ') }}</p>
+      <div class="entry__body">
+        <p class="entry__title">{{ a.role[lang] }}</p>
+        <p class="entry__meta entry__meta--stack">{% if a.of %}<span class="f">{{ a.of }}</span>{% endif %}{% if a.org %}<span class="f">{{ a.org[lang] if a.org is mapping else a.org }}</span>{% endif %}</p>
+        {% if a.detail %}<p class="entry__detail">{{ a.detail[lang] }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+</div>
+{% endblock %}

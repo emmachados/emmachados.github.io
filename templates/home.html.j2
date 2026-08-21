@@ -1,0 +1,62 @@
+{% extends "base.html.j2" %}
+{% block main %}
+<section class="fold">
+  <svg class="fold__curves" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <g fill="none" stroke="var(--color-curve)" stroke-width="1.4" opacity="0.55">
+      <path d="M0 640 C 190 618, 250 432, 424 404 S 700 470, 898 302 S 1090 168, 1200 196"/>
+      <path d="M0 690 C 205 674, 268 502, 442 470 S 718 530, 918 360 S 1100 226, 1200 254"/>
+      <path d="M0 742 C 222 730, 286 570, 462 536 S 738 590, 938 420 S 1112 286, 1200 314"/>
+    </g>
+    <g fill="none" stroke="var(--color-curve)" stroke-width="1" opacity="0.35">
+      <path d="M0 300 C 240 252, 302 122, 520 98 S 818 152, 1010 44 L 1200 22"/>
+      <path d="M0 356 C 258 308, 320 178, 540 154 S 838 208, 1030 98 L 1200 76"/>
+    </g>
+  </svg>
+  <div class="fold__type">
+    <h1 class="fold__name">{% for l in site.name_lines %}<span>{{ l }}</span>{% endfor %}</h1>
+    <p class="fold__stand">{{ t.home.standfirst }}</p>
+  </div>
+  <figure class="fold__portrait">
+    {% if photo %}
+    <img src="/static/{{ photo }}" alt="{{ site.name }}" width="1200" height="1600" loading="eager" fetchpriority="high">
+    {% else %}
+    <div class="placeholder" aria-hidden="true"></div>
+    {% endif %}
+  </figure>
+</section>
+
+<div class="doc doc--home">
+<section class="sec">
+  <h2 class="sec__title">{{ t.home.profile_heading }}</h2>
+  <div class="intro__prose">
+    <p>{{ t.home.bio_1 }}</p>
+    <p>{{ t.home.bio_2 }}</p>
+  </div>
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.home.lines_heading }}</h2>
+  <div class="field">
+    <h3 class="line__title">{{ t.line_blocks[0].title }}</h3>
+    <p>{{ t.line_blocks[0].text }}</p>
+  </div>
+  <div class="lines">
+    {% for b in t.line_blocks[1:] %}
+    <div>
+      <h3 class="line__title">{{ b.title }}</h3>
+      <p>{{ b.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="sec">
+  <h2 class="sec__title">{{ t.home.selected_heading }}</h2>
+  <ul class="entries">
+    {% for pub in featured %}{% include "partials/entry_pub.html.j2" %}{% endfor %}
+  </ul>
+  <p class="more"><a class="tlink" href="{{ path_for('publications') }}">{{ t.home.selected_more }}</a></p>
+</section>
+
+</div>
+{% endblock %}

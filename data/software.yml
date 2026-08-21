@@ -1,0 +1,35 @@
+- id: openphon
+  name: openphon
+  status:
+    en: In development
+    es: En desarrollo
+  summary:
+    en: A phonetics workbench for phone-level analysis, written in Flutter and Rust. Segmentation, measurement and TextGrid interoperability in a desktop application.
+    es: Un banco de trabajo fonético para el análisis a nivel de segmento, escrito en Flutter y Rust. Segmentación, medición e interoperabilidad con TextGrid en una aplicación de escritorio.
+
+- id: elena
+  name: elena
+  status:
+    en: In use, distributed to collaborators
+    es: En uso, distribuida a colaboradores
+  summary:
+    en: A transcription and annotation pipeline for Spanish clinical interviews. Whisper large-v3 transcription, morphosyntactic and disfluency analysis, and export to CHAT, ELAN, Praat TextGrid and SRT.
+    es: Una cadena de transcripción y anotación para entrevistas clínicas en español. Transcripción con Whisper large-v3, análisis morfosintáctico y de disfluencias, y exportación a CHAT, ELAN, TextGrid de Praat y SRT.
+
+- id: clemma
+  name: Clemma
+  status:
+    en: In development
+    es: En desarrollo
+  summary:
+    en: A document explainer for migrants and people with reading difficulties. A photographed official letter is rendered into easy-read fields, each anchored to a verbatim quotation checked against the source text.
+    es: Un explicador de documentos para personas migrantes y con dificultades de lectura. Una carta oficial fotografiada se convierte en campos de lectura fácil, cada uno anclado a una cita literal verificada contra el texto original.
+
+- id: depvoz
+  name: depvoz
+  status:
+    en: Research code
+    es: Código de investigación
+  summary:
+    en: An acoustic feature pipeline for a corpus of picture-description speech, built for work on depression and speech. The corpus itself is health data and is not distributed.
+    es: Una cadena de extracción de rasgos acústicos para un corpus de descripción de láminas, construida para el trabajo sobre depresión y habla. El corpus es dato de salud y no se distribuye.

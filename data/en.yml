@@ -1,0 +1,195 @@
+lang_name: English
+other_lang_name: Español
+
+meta:
+  title: Emma Machado de Souza
+  description: Emma Machado de Souza is a PhD Candidate in linguistics at the Universidad de Salamanca, working on trans and queer linguistics, sociophonetics, clinical linguistics and critical discourse analysis.
+
+position:
+  predoc: PhD Candidate
+group_role:
+  member: Member
+
+nav:
+  home: About
+  publications: Publications
+  talks: Talks
+  teaching: Teaching
+  service: Service
+  cv: CV
+  software: Software
+
+home:
+  bio_1: >-
+    I am a PhD Candidate in the Department of Spanish Language at the
+    Universidad de Salamanca, on a PR-2023 contract from the Junta de
+    Castilla y León and the ESF+. My dissertation asks how transfeminine
+    voices are produced and heard in Peninsular Spanish, which means
+    measuring the acoustics of spontaneous speech and then asking listeners
+    what they thought they heard.
+  bio_2: >-
+    I also publish in clinical linguistics, mainly the speech of people
+    living with depression or with cognitive decline, and on the language
+    used to talk about trans people and about neurodivergence.
+  standfirst: PhD Candidate in Linguistics at the Universidad de Salamanca.
+  profile_heading: Profile
+  lines_heading: What I work on
+  selected_heading: Selected publications
+  selected_more: All publications
+
+lines:
+  transqueer: Trans and queer linguistics
+  sociophonetics: Sociophonetics
+  clinical: Clinical linguistics
+  discourse: Critical discourse analysis
+  technology: Language technology
+
+line_blocks:
+  - key: transqueer
+    title: Trans and queer linguistics
+    text: >-
+      Language as evidence of trans and queer life, and as an instrument
+      used on it. I work with recorded voices, online communities,
+      parliamentary debate and clinical protocols, which is to say with
+      people describing themselves and with strangers doing it for them at
+      greater length.
+  - key: sociophonetics
+    title: Sociophonetics
+    text: >-
+      The voice as social behavior, measured acoustically. Spontaneous
+      speech and perception experiments, on the assumption that what a
+      listener does with a voice is at least as interesting as what the
+      speaker meant by it.
+  - key: clinical
+    title: Clinical linguistics
+    text: >-
+      Speech in depression and in cognitive decline, and the distance
+      between a statistically significant difference and a diagnostic
+      marker. The literature crosses it faster than I do.
+  - key: discourse
+    title: Critical discourse analysis
+    text: >-
+      How parliamentary, biomedical and online discourses name and regulate
+      trans identity and neurodivergence, and what the communities on the
+      receiving end write back.
+  - key: technology
+    title: Language technology
+    text: >-
+      Corpora, classifiers and large language models, for questions too
+      large to answer by hand. They also make excellent informants on what
+      has been said about the people they describe, having read most of it.
+
+publications:
+  title: Publications
+  intro: Articles and book chapters, most recent first.
+  status:
+    in_press: In press
+    forthcoming: Forthcoming
+  type:
+    article: Article
+    chapter: Book chapter
+    review: Review
+    edited: Edited volume
+    book: Book
+  outreach_heading: Outreach and dissemination
+  peer_note: Everything in the list above is peer-reviewed.
+  in: In
+  ed: Ed.
+  eds: Eds.
+
+talks:
+  title: Talks
+  intro: Conference presentations, invited talks and posters, most recent first.
+  kind:
+    invited: Invited talk
+    poster: Poster
+  panel: In the panel
+
+teaching:
+  title: Teaching
+  intro: University teaching, courses taught, and earlier work as a teacher of Spanish.
+  hours: hours
+  course_page: Slides and reading list
+  materials_note: >-
+    About the materials: they are what I actually took into the room, not a
+    polished version made for the internet. Be kind. I am still learning to
+    teach.
+  kind:
+    university: University teaching
+    course: Courses taught
+    other: Supervision and earlier teaching
+
+service:
+  title: Service
+  intro: Chairing, committees, panels convened, reviewing, corpus work and outreach.
+  with_label: with
+  kind:
+    chair: Chairing
+    committee: Committees
+    panel: Panels convened
+    review: Reviewing
+    corpus: Corpus collaborations
+    outreach: Outreach
+
+cv:
+  title: Curriculum vitae
+  download: Download as PDF
+  updated: Last updated
+  research: Research
+  position: Position
+  dissertation: Doctoral research
+  scope:
+    international: International projects
+    own: Own projects
+    contract: Research contracts
+  projects: Projects
+  pi: Led by
+  supervised_by: Supervised by
+  experience: Experience
+  awards: Distinctions and funding
+  present: present
+
+course:
+  materials: Slides
+  recommended: Recommended reading
+  further: Further reading
+  links: Video, audio and data
+  kind:
+    video: Video
+    podcast: Audio
+    data: Data
+    text: Reading
+  session: Session
+  pages: pages
+  back: All teaching
+  materials_licence: >-
+    The slides are my own and are available under a CC BY-NC-SA 4.0 licence:
+    reuse and adapt them with attribution, non-commercially, and under the same
+    licence.
+  reading_note: >-
+    The course reading list, with the reference for each text.
+
+software:
+  title: Software
+  intro: >-
+    Research tools written for my own work and for collaborators. None of these
+    has a public release yet, so this page carries descriptions and no downloads.
+
+education:
+  title: Education
+  in_progress: in progress
+
+ui:
+  nav_label: Primary navigation
+  skip: Skip to content
+  email: Email
+  sprite_alt: A Wigglytuff sprite
+  sprite_alt_2: A Trubbish sprite
+  sprite_credit: >-
+    Footer sprites from PMD Collab's SpriteCollab archive, credited there to
+    Chunsoft and to PowerCristal. Pokémon is a trademark of Nintendo, Creatures
+    and Game Freak.
+  contact: Contact
+  switch_lang: Ver en español
+  footer_rights: Text on this site is available under CC BY 4.0.
+  no_analytics: This site sets no cookies and runs no analytics.

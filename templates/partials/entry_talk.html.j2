@@ -1,0 +1,13 @@
+<li class="entry entry--talk">
+  <p class="entry__title">{{ talk.title }}</p>
+  <p class="entry__meta">
+    <span class="f f--authors">{{ authors(talk.authors) }}</span><span class="f f--event"><em>{{ talk.event }}</em></span><span class="f f--host">{{ talk.host }}</span><span class="f f--date">{{ date_range(talk.date_start, talk.date_end) }}</span>
+  </p>
+  {% if talk.panel %}
+  <p class="entry__detail"><span class="f f--panellabel">{{ t.talks.panel }}</span><span class="f f--panel">{{ talk.panel }}</span></p>
+  {% endif %}
+  <p class="entry__marks">
+    {% if talk.kind in t.talks.kind %}<span class="mark mark--kind mark--kind-{{ talk.kind }}">{{ t.talks.kind[talk.kind] }}</span>{% endif %}
+    {% for l in talk.lines %}<span class="mark mark--line">{{ t.lines[l] }}</span>{% endfor %}
+  </p>
+</li>

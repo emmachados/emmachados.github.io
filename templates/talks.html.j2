@@ -1,0 +1,17 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ t.talks.title }}, {{ site.name }}{% endblock %}
+{% block main %}
+<div class="doc">
+<h1 class="doc__title">{{ t.talks.title }}</h1>
+<p class="doc__intro">{{ t.talks.intro }}</p>
+
+{% for year, items in talks_by_year %}
+<section class="group">
+  <h2 class="group__year">{{ year }}</h2>
+  <ul class="entries">
+    {% for talk in items %}{% include "partials/entry_talk.html.j2" %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+</div>
+{% endblock %}

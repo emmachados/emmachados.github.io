@@ -1,0 +1,18 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ t.software.title }}, {{ site.name }}{% endblock %}
+{% block main %}
+<div class="doc">
+<h1 class="doc__title">{{ t.software.title }}</h1>
+<p class="doc__intro">{{ t.software.intro }}</p>
+
+<ul class="entries">
+  {% for s in software %}
+  <li class="entry">
+    <p class="entry__title">{{ s.name }}</p>
+    <p>{{ s.summary[lang] }}</p>
+    <p class="tags"><span class="tag">{{ s.status[lang] }}</span></p>
+  </li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ t.publications.title }}, {{ site.name }}{% endblock %}
+{% block main %}
+<div class="doc">
+<h1 class="doc__title">{{ t.publications.title }}</h1>
+<p class="doc__intro">{{ t.publications.intro }}</p>
+
+{% for year, items in publications_by_year %}
+<section class="group">
+  <h2 class="group__year">{{ year }}</h2>
+  <ul class="entries">
+    {% for pub in items %}{% include "partials/entry_pub.html.j2" %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+<p class="peer-note">{{ t.publications.peer_note }}</p>
+
+{% if outreach_pubs %}
+<section class="sec sec--outreach">
+  <h2 class="sec__title">{{ t.publications.outreach_heading }}</h2>
+  <ul class="entries">
+    {% for pub in outreach_pubs %}{% include "partials/entry_pub.html.j2" %}{% endfor %}
+  </ul>
+</section>
+{% endif %}
+</div>
+{% endblock %}

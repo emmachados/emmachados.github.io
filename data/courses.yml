@@ -1,0 +1,743 @@
+- id: metodologias-queer
+  page: course_mq
+  teaching_id: iuce-metodologias-queer
+  title: 'Metodologías queer: repensando métodos y prácticas en la investigación social'
+  institution: Universidad de Salamanca
+  detail:
+    en: 'Continuing-education course for university teaching staff, run by the IUCE. Three sessions of
+      open discussion around four axes: categorization, positionality, ethics and intersectionality.'
+    es: 'Curso del IUCE para la formación continua del personal docente e investigador de la universidad.
+      Tres sesiones de discusión abierta en torno a cuatro ejes: categorización, posicionalidad, ética
+      e interseccionalidad.'
+  years: 2025-2026
+  hours: 10
+  sessions:
+  - n: 1
+    title:
+      en: Epistemological foundations
+      es: Fundamentos epistemológicos
+    deck: metodologias-queer-1-fundamentos-epistemologicos.pdf
+    pages: 48
+    reading:
+      recommended:
+      - type: chapter
+        year: 2016
+        authors:
+        - Browne, K.
+        - Nash, C. J.
+        title: Introduction
+        container: Queer methods and methodologies
+        publisher: Routledge
+        pages: 1-24
+        doi: 10.4324/9781315603223-1
+      - type: article
+        year: 2004
+        authors:
+        - Bucholtz, M.
+        - Hall, K.
+        title: Theorizing identity in language and sexuality research
+        venue: Language in Society
+        volume: '33'
+        issue: 4
+        doi: 10.1017/s0047404504334020
+      - type: chapter
+        year: 2020
+        authors:
+        - Das, S.
+        title: Queer methodologies and social science
+        pages: 95-121
+        doi: 10.1002/9781119315049.ch6
+        container: Companion to sexuality studies
+        publisher: Wiley
+        editors:
+        - Naples, N. A.
+      - type: book
+        year: 2022
+        authors:
+        - Guyan, K.
+        title: Queer data
+        doi: 10.5040/9781350230767
+        publisher: Bloomsbury
+      - type: article
+        year: 2017
+        authors:
+        - McDonald, J.
+        title: 'Queering methodologies and organizational research: disrupting, critiquing, and exploring'
+        venue: 'Qualitative Research in Organizations and Management: An International Journal'
+        volume: '12'
+        issue: 2
+        pages: 130-148
+        doi: 10.1108/qrom-06-2016-1388
+      - type: article
+        year: 2020
+        authors:
+        - Nelson, R.
+        title: 'Questioning identities/shifting identities: the impact of researching sex and gender on
+          a researcher’s LGBT+ identity'
+        venue: Qualitative Research
+        volume: '20'
+        issue: 6
+        pages: 910-926
+        doi: 10.1177/1468794120914522
+      - type: article
+        year: 2025
+        authors:
+        - Spiegelman, J. D.
+        title: Grappling with cisgender positionality in applied linguistics research with trans participants
+        venue: TESOL Quarterly
+        volume: '59'
+        issue: 4
+        pages: 2358-2370
+        doi: 10.1002/tesq.70013
+      - type: chapter
+        year: 2020
+        authors:
+        - Zimman, L.
+        title: 'Transgender language, transgender moment: Toward a trans linguistics'
+        container: The Oxford handbook of language and sexuality
+        publisher: Oxford University Press
+        doi: 10.1093/oxfordhb/9780190212926.013.45
+      further:
+      - type: article
+        year: 2011
+        authors:
+        - Adams, T. E.
+        - Holman Jones, S.
+        title: 'Telling stories: Reflexivity, queer theory, and autoethnography'
+        venue: Cultural Studies ↔ Critical Methodologies
+        volume: '11'
+        issue: 2
+        pages: 108-116
+        doi: 10.1177/1532708611401329
+      - type: article
+        year: 2007
+        authors:
+        - Borba, R.
+        - Ostermann, A. C.
+        title: Do bodies matter?
+        venue: Gender and Language
+        volume: '1'
+        issue: 1
+        pages: 131-147
+        doi: 10.1558/genl.2007.1.1.131
+      - type: article
+        year: 2021
+        authors:
+        - Crawley, S. L.
+        - Whitlock, M.
+        - Earles, J.
+        title: 'Smithing queer empiricism: Engaging ethnomethodology for a queer social science'
+        venue: Sociological Theory
+        volume: '39'
+        issue: 3
+        pages: 127-152
+        doi: 10.1177/07352751211026357
+      - type: article
+        year: 2024
+        authors:
+        - Cull, M. J.
+        title: 'Trans epistemology and methodological radicalism: Un Œuf, but enough'
+        venue: Hypatia
+        volume: '39'
+        issue: 1
+        pages: 44-60
+        doi: 10.1017/hyp.2023.102
+      - container: 'Queer methods and methodologies: Intersecting queer theories and social science research'
+        editors:
+        - Browne, K.
+        - Nash, C. J.
+        publisher: Routledge
+        year: 2016
+        type: chapter
+        authors:
+        - Dahl, U.
+        title: Femme on femme
+        pages: 143-166
+        doi: 10.4324/9781315603223-10
+      - type: article
+        year: 2020
+        authors:
+        - Cuklanz, L.
+        - Erol, A.
+        title: 'Queer theory and feminist methods: A review'
+        venue: Investigaciones Feministas
+        volume: '11'
+        issue: 2
+        pages: 211-220
+        doi: 10.5209/infe.66476
+      - type: article
+        year: 2013
+        authors:
+        - McDonald, J.
+        title: 'Coming out in the field: A queer reflexive account of shifting researcher identity'
+        venue: Management Learning
+        volume: '44'
+        issue: 2
+        pages: 127-143
+        doi: 10.1177/1350507612473711
+      - type: article
+        year: 2011
+        authors:
+        - Motschenbacher, H.
+        title: 'Taking Queer Linguistics further: sociolinguistics and critical heteronormativity research'
+        venue: International Journal of the Sociology of Language
+        volume: '2011'
+        issue: 212
+        doi: 10.1515/ijsl.2011.050
+      - type: article
+        year: 2013
+        authors:
+        - Motschenbacher, H.
+        - Stegu, M.
+        title: Queer Linguistic approaches to discourse
+        venue: Discourse &amp; Society
+        volume: '24'
+        issue: 5
+        pages: 519-535
+        doi: 10.1177/0957926513486069
+      - type: article
+        year: 2018
+        authors:
+        - O'Malley, M. P.
+        - Asher, N.
+        - Beck, B. L.
+        - Capper, C. A.
+        - Lugg, C. A.
+        - Murphy, J. P.
+        - Whitlock, R. U.
+        title: 'Asking queer(er) questions: Epistemological and methodological implications for qualitative
+          inquirers'
+        venue: International Journal of Qualitative Studies in Education
+        volume: 31
+        issue: 7
+        pages: 572-594
+        doi: 10.1080/09518398.2018.1455996
+      - type: article
+        year: 2026
+        authors:
+        - Wang, S.
+        - Wang, N. C.
+        - Lee, W. C.
+        title: 'Methodological and ethical considerations in lGBTQ-Focused online ethnographic research:
+          A systematic review and a human-Centered framework'
+        venue: International Journal of Qualitative Methods
+        volume: '25'
+        doi: 10.1177/16094069251411167
+    links:
+    - kind: video
+      url: https://duke.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=2986a255-ad98-4db4-bd23-ad9d00f73ef0
+      creator: Gill-Peterson, J.
+      date: '2021'
+      title: 'Queer theory killed Venus Xtravaganza: What''s trans about queer studies now?'
+      medium: Video
+      site: Eve Kosofsky Sedgwick Memorial Lecture, Duke University
+    - kind: video
+      url: https://www.youtube.com/watch?v=e3fHVndB_kQ
+      creator: Amin, K.
+      date: 2026, May 11
+      title: Eve Kosofsky Sedgwick Memorial Lecture in Gender and Sexuality Studies
+      medium: Video
+      site: Boston University
+    - kind: video
+      url: https://oyc.yale.edu/english/engl-300/lecture-23
+      creator: Fry, P. H.
+      date: '2009'
+      title: 'Lecture 23: Queer theory and gender performativity'
+      medium: Video lecture
+      site: Open Yale Courses, ENGL 300
+    - kind: video
+      url: https://www.oii.ox.ac.uk/news-events/videos/the-rainbow-system-queer-data-and-the-limits-of-lgbtq-inclusion/
+      creator: Guyan, K.
+      date: 2023, June 6
+      title: 'The rainbow system: Queer data and the limits of LGBTQ inclusion'
+      medium: Video
+      site: Oxford Internet Institute Pride Lecture
+    - kind: podcast
+      url: https://thehpspodcast.buzzsprout.com/2180146/episodes/12949879-s1-ep-1-donna-haraway-on-storytelling-in-science
+      creator: Haraway, D.
+      date: 2023, May 31
+      title: Donna Haraway on storytelling in science (Season 1, Episode 1)
+      medium: Audio podcast episode
+      site: The HPS Podcast
+    - kind: podcast
+      url: https://www.thegoodrobot.co.uk/listennow/episode/7e7c29e4/queer-data-with-kevin-guyan
+      creator: Guyan, K.
+      date: 2022, November 1
+      title: Queer data with Kevin Guyan
+      medium: Audio podcast episode
+      site: The Good Robot
+    - kind: podcast
+      url: https://www.thegoodrobot.co.uk/post/kevin-guyan-on-queer-data
+      creator: The Good Robot
+      date: '2022'
+      title: Kevin Guyan on queer data
+      medium: Transcript
+      site: The Good Robot
+    - kind: data
+      url: https://www.gov.scot/publications/non-binary-people-in-scotland-an-analysis-of-scotlands-census-2022/
+      creator: Scottish Government
+      date: 2025, July 14
+      title: 'Non-binary people in Scotland: An analysis of Scotland''s Census 2022'
+      medium: Report
+      site: ''
+    - kind: data
+      url: https://www.scotlandscensus.gov.uk/2022-reports/scotlands-census-2022-quality-assurance-reports/quality-assurance-report-sexual-orientation-and-trans-status-or-history/
+      creator: National Records of Scotland
+      date: n.d.
+      title: 'Scotland''s Census 2022 quality assurance report: Sexual orientation and trans status or
+        history'
+      medium: Report
+      site: Scotland's Census
+    - kind: text
+      url: https://www.radicalphilosophyarchive.com/issue-files/rp67_interview_butler.pdf
+      creator: Osborne, P., & Segal, L.
+      date: '1994'
+      title: 'Gender as performance: An interview with Judith Butler'
+      medium: Interview
+      site: Radical Philosophy, 67
+    - kind: text
+      url: https://www.quirkos.com/blog/post/queer-theory-and-qualitative-methods-an-unlikely-marriage/
+      creator: Weisser, J.
+      date: 2025, July 16
+      title: Applying queer theory to qualitative research
+      medium: Blog post
+      site: Quirkos
+  - n: 2
+    title:
+      en: Methods and practices
+      es: Métodos y prácticas
+    deck: metodologias-queer-2-metodos-y-practicas.pdf
+    pages: 45
+    reading:
+      recommended:
+      - type: article
+        year: 2021
+        authors:
+        - Brown, L.
+        title: 'A philosophy, a methodology, and a gender identity: Bringing pragmatism and mixed methods
+          research to transformative nonbinary focused sociophonetic research'
+        venue: Toronto Working Papers in Linguistics
+        volume: '43'
+        issue: 1
+        doi: 10.33137/twpl.v43i1.35965
+        pages: 1-13
+      - container: 'Queer methods and methodologies: Intersecting queer theories and social science research'
+        editors:
+        - Browne, K.
+        - Nash, C. J.
+        publisher: Routledge
+        year: 2016
+        type: chapter
+        authors:
+        - Browne, K.
+        title: Queer quantification or queer(y)ing quantification
+        pages: 231-250
+        doi: 10.4324/9781315603223-15
+      - type: chapter
+        year: 2021
+        authors:
+        - Calder, J.
+        title: Whose indexical field is it? The role of community epistemology in indexing social meaning
+        container: Proceedings of the 20th meeting of the Texas Linguistic Society
+        publisher: Texas Linguistic Society
+      - container: 'Queer methods and methodologies: Intersecting queer theories and social science research'
+        editors:
+        - Browne, K.
+        - Nash, C. J.
+        publisher: Routledge
+        year: 2016
+        type: chapter
+        authors:
+        - Jackman, M. C.
+        title: The trouble with fieldwork
+        pages: 113-128
+        doi: 10.4324/9781315603223-8
+      - type: article
+        year: 2016
+        authors:
+        - Dadas, C.
+        title: 'Messy methods: Queer methodological approaches to researching social media'
+        venue: Computers and Composition
+        volume: '40'
+        pages: 60-72
+        doi: 10.1016/j.compcom.2016.03.007
+      - type: article
+        year: 2011
+        authors:
+        - Levy, D. L.
+        - Johnson, C. W.
+        title: What does the Q mean? Including queer voices in qualitative research
+        venue: Qualitative Social Work
+        volume: '11'
+        issue: 2
+        pages: 130-140
+        doi: 10.1177/1473325011400485
+      - type: article
+        year: 2018
+        authors:
+        - Motschenbacher, H.
+        title: Corpus linguistics in language and sexuality studies
+        venue: Journal of Language and Sexuality
+        volume: '7'
+        issue: 2
+        pages: 145-174
+        doi: 10.1075/jls.17019.mot
+      - container: 'Queer methods and methodologies: Intersecting queer theories and social science research'
+        editors:
+        - Browne, K.
+        - Nash, C. J.
+        publisher: Routledge
+        year: 2016
+        type: chapter
+        authors:
+        - Gorman-Murray, A.
+        - Johnston, L.
+        - Waitt, G.
+        title: Queer(ing) communication in research relationships
+        pages: 97-112
+        doi: 10.4324/9781315603223-7
+      - type: article
+        year: 2009
+        authors:
+        - Rooke, A.
+        title: 'Queer in the field: On emotions, temporality, and performativity in ethnography'
+        venue: Journal of Lesbian Studies
+        volume: '13'
+        issue: 2
+        pages: 149-160
+        doi: 10.1080/10894160802695338
+      further:
+      - type: article
+        year: 2018
+        authors:
+        - Fish, J. N.
+        - Russell, S. T.
+        title: Queering methodologies to understand queer families
+        venue: Family Relations
+        volume: '67'
+        issue: 1
+        pages: 12-25
+        doi: 10.1111/fare.12297
+      - type: book
+        year: 2020
+        authors:
+        - Franzke, A. S.
+        - Bechmann, A.
+        - Zimmer, M.
+        - Ess, C.
+        title: 'Internet research: Ethical guidelines 3.0'
+        publisher: Association of Internet Researchers
+        url: https://aoir.org/reports/ethics3.pdf
+      - container: 'Queer methods and methodologies: Intersecting queer theories and social science research'
+        editors:
+        - Browne, K.
+        - Nash, C. J.
+        publisher: Routledge
+        year: 2016
+        type: chapter
+        authors:
+        - Graham, M.
+        title: Method matters
+        pages: 183-194
+        doi: 10.4324/9781315603223-12
+      - container: 'Queer methods and methodologies: Intersecting queer theories and social science research'
+        editors:
+        - Browne, K.
+        - Nash, C. J.
+        publisher: Routledge
+        year: 2016
+        type: chapter
+        authors:
+        - Muñoz, L.
+        title: Brown, queer and gendered
+        pages: 55-68
+        doi: 10.4324/9781315603223-4
+      - type: article
+        year: 2023
+        authors:
+        - Nye, C. M.
+        - Livingston, J. A.
+        - Hequembourg, A.
+        title: Key considerations for conducting qualitative research with LGBTQ + youth
+        venue: International Journal of LGBTQ+ Youth Studies
+        volume: '22'
+        issue: 1
+        pages: 1-34
+        doi: 10.1080/19361653.2023.2253444
+      - type: unresolved
+        label: Smuts (2024). Exploring the Pleasures and Perils of Participant Observation in Researching
+          Heterosexual Identities
+      - type: article
+        year: 2024
+        authors:
+        - Vriesendorp, H.
+        - Wilson, R. T.
+        title: 'Minority genders in quantitative survey research: a data-driven approach to clear, inclusive,
+          and accurate gender questions'
+        venue: Linguistics Vanguard
+        volume: '10'
+        issue: 1
+        pages: 493-504
+        doi: 10.1515/lingvan-2023-0025
+    links:
+    - kind: video
+      url: https://www.youtube.com/watch?v=k4pq5icHJPw
+      creator: shuster, s.
+      date: 2024, March 9
+      title: Uncertain expertise in transgender medicine
+      medium: Video
+      site: Center for Applied Transgender Studies
+    - kind: video
+      url: https://www.youtube.com/watch?v=SlhBGHgufG8
+      creator: University of Colorado Boulder
+      date: 2016, April 7
+      title: '(Un)moved: The paradoxes of disaffection among undocumented queer immigrants'
+      medium: Video
+      site: YouTube
+    - kind: podcast
+      url: https://podcasts.apple.com/ie/podcast/lal-apalooza/id1260191014?i=1000444483210
+      creator: Zimman, L.
+      date: 2019, November 26
+      title: Lal-apalooza
+      medium: Audio podcast episode
+      site: The Vocal Fries
+    - kind: podcast
+      url: https://vocalfriespod.com/2024/06/19/lal-apalooza-transcript-2/
+      creator: The Vocal Fries
+      date: 2024, June 19
+      title: Lal-apalooza transcript
+      medium: Transcript
+      site: ''
+    - kind: podcast
+      url: https://halabedi.eus/ciencia-catherine-dignazio-la-cuantificacion-de-la-informacion-puede-ser-y-es-violencia-pero-tambien-tiene-el-potencial-de-ser-liberadora/
+      creator: D'Ignazio, C.
+      date: n.d.
+      title: La cuantificación de la información puede ser y es violencia, pero también tiene el potencial
+        de ser liberadora
+      medium: Interview
+      site: Hala Bedi
+    - kind: podcast
+      url: https://saqmi.se/play/del-lagrace-volcano/
+      creator: Volcano, D. L.
+      date: 2020, November 18
+      title: Del LaGrace Volcano
+      medium: Video
+      site: SAQMI
+    - kind: text
+      url: https://data-feminism.mitpress.mit.edu/
+      creator: D'Ignazio, C., & Klein, L. F.
+      date: '2020'
+      title: Data feminism
+      medium: Open-access edition
+      site: MIT Press
+    - kind: text
+      url: https://www.culanth.org/fieldsights/series/just-an-anthropologist-an-interview-with-esther-newton
+      creator: Society for Cultural Anthropology
+      date: 2016, December 7
+      title: Just an anthropologist? An interview with Esther Newton
+      medium: Interview
+      site: Fieldsights
+    - kind: text
+      url: https://www.zephoria.org/thoughts/archives/2010/01/25/public_by_defau.html
+      creator: boyd, d.
+      date: 2010, January 25
+      title: Public by default, private when necessary
+      medium: Blog post
+      site: Apophenia
+  - n: 3
+    title:
+      en: Ethics, politics and intersectionality
+      es: Ética, política e interseccionalidad
+    deck: metodologias-queer-3-etica-e-interseccionalidad.pdf
+    pages: 28
+    reading:
+      recommended:
+      - container: 'Queer methods and methodologies: Intersecting queer theories and social science research'
+        editors:
+        - Browne, K.
+        - Nash, C. J.
+        publisher: Routledge
+        year: 2016
+        type: chapter
+        authors:
+        - Detamore, M.
+        title: Queer(y)ing the ethics of research methods
+        pages: 167-182
+        doi: 10.4324/9781315603223-11
+      - type: chapter
+        year: 2022
+        authors:
+        - Guyan, K.
+        title: Fight back! Using queer data
+        container: 'Queer data: Using gender, sex and sexuality data for action'
+        publisher: Bloomsbury
+        doi: 10.5040/9781350230767
+      - type: article
+        year: 2016
+        authors:
+        - McDonald, J.
+        title: 'Expanding queer reflexivity: The closet as a guiding metaphor for reflexive practice'
+        venue: Management Learning
+        volume: '47'
+        issue: 4
+        pages: 391-406
+        doi: 10.1177/1350507615610029
+      - type: article
+        year: 2025
+        authors:
+        - Moussawi, G.
+        - Richardson, J. W.
+        - Greene, T.
+        title: 'Beyond positionalities: Moving toward a queer embodied approach to researching LGBTQ+
+          space and placemaking'
+        venue: Sex &amp; Sexualities
+        volume: '1'
+        issue: 2
+        pages: 201-210
+        doi: 10.1177/30333717251375993
+      - type: article
+        year: 2025
+        authors:
+        - Sibbald, K. R.
+        - Phelan, S. K.
+        - Beagan, B. L.
+        - Pride, T. M.
+        title: 'Positioning positionality and reflecting on reflexivity: Moving from performance to practice'
+        venue: Qualitative Health Research
+        doi: 10.1177/10497323241309230
+      - type: chapter
+        year: 2010
+        authors:
+        - Taylor, Y.
+        title: 'Complexities and complications: Intersections of class and sexuality'
+        container: Theorizing intersectionality and sexuality
+        publisher: Palgrave Macmillan UK
+        pages: 37-55
+        doi: 10.1057/9780230304093_3
+      - type: article
+        year: 2018
+        authors:
+        - Vincent, B. W.
+        title: 'Studying trans: recommendations for ethical recruitment and collaboration with transgender
+          participants in academic research'
+        venue: Psychology &amp; Sexuality
+        volume: '9'
+        issue: 2
+        pages: 102-116
+        doi: 10.1080/19419899.2018.1434558
+      further:
+      - type: article
+        year: 2013
+        authors:
+        - Bilge, S.
+        title: 'Intersectionality undone: Saving intersectionality from feminist intersectionality studies'
+        venue: 'Du Bois Review: Social Science Research on Race'
+        volume: '10'
+        issue: 2
+        pages: 405-424
+        doi: 10.1017/s1742058x13000283
+      - type: article
+        year: 1989
+        authors:
+        - Crenshaw, K.
+        title: 'Demarginalizing the intersection of race and sex: A Black feminist critique of antidiscrimination
+          doctrine, feminist theory and antiracist politics'
+        venue: University of chicago legal forum
+        volume: 1989
+        issue: 1
+        url: https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/
+      - type: book
+        year: 2017
+        authors:
+        - Kerekere, E.
+        title: 'Part of the whānau: The emergence of Takatāpui identity. He whāriki takatāpui'
+        publisher: Victoria University of Wellington
+        doi: 10.26686/wgtn.17060225
+      - type: chapter
+        year: 2015
+        authors:
+        - Platero, L. R.
+        title: ¿Es el análisis interseccional una metodología feminista y queer?
+        container: 'Otras formas de (re)conocer: Reflexiones, herramientas y aplicaciones desde la investigación
+          feminista'
+        editors:
+        - Mendia Azkue, I.
+        - Luxán, M.
+        - Legarreta, M.
+        - Guzmán, G.
+        - Zirion, I.
+        - Azpiazu, J.
+        publisher: Hegoa / SIMReF
+        pages: 79-96
+      - type: chapter
+        year: 2019
+        authors:
+        - Radi, B.
+        title: 'Políticas del conocimiento: Hacia una epistemología trans*'
+        container: 'Los mil pequeños sexos: Intervenciones críticas sobre políticas de género y sexualidades'
+        editors:
+        - López Seoane, M.
+        publisher: Eduntref
+        url: https://www.aacademica.org/blas.radi/32
+      - type: article
+        year: 2021
+        authors:
+        - Radi, B.
+        title: 'Las personas trans en la ontología social oficial: Políticas de números con perspectiva
+          de género'
+        venue: Revista Argentina de Ciencia Política
+        issue: 26
+        doi: 10.62174/racp.6658
+      - type: article
+        year: 2009
+        authors:
+        - Tuck, E.
+        title: 'Suspending damage: A letter to communities'
+        venue: Harvard Educational Review
+        volume: '79'
+        issue: 3
+        pages: 409-428
+        doi: 10.17763/haer.79.3.n0016675661t3n15
+    links:
+    - kind: video
+      url: https://www.ted.com/talks/kimberle_crenshaw_the_urgency_of_intersectionality
+      creator: Crenshaw, K.
+      date: 2016, November
+      title: The urgency of intersectionality
+      medium: Video
+      site: TED
+    - kind: video
+      url: https://www.youtube.com/watch?v=PXYNWb9cLrE
+      creator: Spade, D.
+      date: 2017, January 30
+      title: CLAGS 2016 Kessler Award lecture
+      medium: Video
+      site: Barnard Center for Research on Women
+    - kind: text
+      url: https://feministkilljoys.com/
+      creator: Ahmed, S.
+      date: n.d.
+      title: feministkilljoys
+      medium: Blog
+      site: ''
+    - kind: text
+      url: https://blackpast.org/african-american-history/1982-audre-lorde-learning-60s/
+      creator: Lorde, A.
+      date: '1982'
+      title: Learning from the 60s
+      medium: Speech
+      site: BlackPast
+    - kind: text
+      url: https://medium.com/@YESHICAN/abolition-means-the-creation-of-something-new-72fc67c8f493
+      creator: ''
+      date: n.d.
+      title: Abolition means the creation of something new
+      medium: Blog post
+      site: Medium
+    - kind: text
+      url: https://www.societyandspace.org/articles/on-normal-life
+      creator: Spade, D., & Oswin, N.
+      date: n.d.
+      title: On normal life
+      medium: Interview
+      site: Society and Space

@@ -1,0 +1,7 @@
+<li class="entry entry--pub">
+  <p class="entry__cite">{{ apa(pub) | safe }}</p>
+  <p class="entry__marks">
+    <span class="mark mark--type">{{ t.publications.type[pub.type] }}</span>
+    {% for l in pub.lines %}<span class="mark mark--line">{{ t.lines[l] }}</span>{% endfor %}
+  </p>
+</li>

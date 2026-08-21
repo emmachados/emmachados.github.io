@@ -1,0 +1,31 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ t.service.title }}, {{ site.name }}{% endblock %}
+{% block main %}
+<div class="doc">
+<h1 class="doc__title">{{ t.service.title }}</h1>
+<p class="doc__intro">{{ t.service.intro }}</p>
+
+{% for kind in service_kinds %}
+{% set items = service | selectattr('kind', 'equalto', kind) | list %}
+{% if items %}
+<section class="sec">
+  <h2 class="sec__title">{{ t.service.kind[kind] }}</h2>
+  <ul class="entries">
+    {% for e in items %}
+    <li class="entry entry--teach">
+      <p class="entry__when">{{ e.years | join(', ') }}</p>
+      <div class="entry__body">
+        <p class="entry__title">{% if e.url %}<a href="{{ e.url }}">{{ e.panel_title or e.of }}</a>{% else %}{{ e.panel_title or e.of }}{% endif %}</p>
+        <p class="entry__meta entry__meta--stack">
+          {% if e.panel_title %}<span class="f f--event">{{ e.of }}</span>{% endif %}<span class="f f--role">{{ e.role[lang] }}</span>{% if e.convened_with %}<span class="f f--with">{{ t.service.with_label }} {{ authors(e.convened_with) }}</span>{% endif %}<span class="f f--org">{{ e.org }}</span>
+        </p>
+        {% if e.detail %}<p class="entry__detail">{{ e.detail[lang] }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endfor %}
+</div>
+{% endblock %}

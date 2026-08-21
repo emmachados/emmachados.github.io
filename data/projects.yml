@@ -1,0 +1,43 @@
+dissertation:
+  title: null
+  topic:
+    en: Perception and production of transfeminine voices in Peninsular Spanish.
+    es: Percepción y producción de voces transfemeninas en español peninsular.
+  supervisors: ["Olga Ivanova", "Juan José García Meilán", "María Carmen Fernández Juncal"]
+  institution: Universidad de Salamanca
+  started: 2024-11-01
+
+projects:
+  - id: communikite
+    scope: international
+    year_start: 2023
+    year_end: 2026
+    title: "COMMUNIKITE: Communicative needs in a first-aid kit for humanitarian emergency situations"
+    pi: María Carmen Fernández Juncal
+    role:
+      en: Team member
+      es: Miembro del equipo
+
+  - id: inclusive
+    scope: own
+    year_start: 2025
+    year_end: 2025
+    title: "INCLUSIVE: prácticas de comunicación inclusiva hacia estudiantes trans y no binaries en el ámbito universitario"
+    funder: Universidad de Salamanca
+    role:
+      en: Principal investigator
+      es: Investigadora principal
+
+  - id: cows-l2h
+    scope: contract
+    year_start: 2023
+    year_end: 2023
+    title: Corrección y anotación del corpus de aprendices de español COWS L2H
+    funder: University of California, Davis
+    pi: Natividad Hernández Muñoz
+    contract:
+      en: Article 83 research contract
+      es: Contrato de investigación al amparo del artículo 83
+    role:
+      en: Team member
+      es: Miembro del equipo

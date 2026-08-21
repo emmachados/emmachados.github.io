@@ -1,0 +1,86 @@
+{% from "partials/icons.html.j2" import ico %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% block title %}{{ t.meta.title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ t.meta.description }}{% endblock %}">
+{% if noindex %}
+<meta name="robots" content="noindex, nofollow">
+{% else %}
+<link rel="canonical" href="{{ site.base_url }}{{ path_for(page) }}">
+<link rel="alternate" hreflang="en" href="{{ site.base_url }}{{ path_for(page, 'en') }}">
+<link rel="alternate" hreflang="es" href="{{ site.base_url }}{{ path_for(page, 'es') }}">
+<link rel="alternate" hreflang="x-default" href="{{ site.base_url }}{{ path_for(page, 'en') }}">
+{% endif %}
+{% for f in preload_fonts %}
+<link rel="preload" href="/static/fonts/{{ f }}" as="font" type="font/woff2" crossorigin>
+{% endfor %}
+<link rel="stylesheet" href="/static/css/tokens.css">
+<link rel="stylesheet" href="/static/css/fonts.css">
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body class="p-{{ page }}">
+<a class="skip" href="#main">{{ t.ui.skip }}</a>
+
+{% block masthead %}
+<header class="mast {% if page != 'home' %}mast--compact{% endif %}">
+  <div class="mast__inner">
+    <p class="mast__affil">
+      <span class="f">{{ site.institution }}</span><span class="f">{{ site.department }}</span>
+    </p>
+    {% set name_lines %}{% for l in site.name_lines %}<span>{{ l }}</span>{% if not loop.last %} {% endif %}{% endfor %}{% endset %}
+    <p class="mast__name">{% if page == 'home' %}{{ name_lines }}{% else %}<a href="{{ path_for('home') }}">{{ name_lines }}</a>{% endif %}</p>
+    <nav class="mast__nav" aria-label="{{ t.ui.nav_label }}">
+      <ul>
+        {% for pid, meta in nav %}
+        <li><a href="{{ path_for(pid) }}"{% if pid == page %} aria-current="page"{% endif %}>{{ t.nav[pid] }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <p class="mast__lang">
+      <a href="{{ path_for(page, other_lang) }}" hreflang="{{ other_lang }}" rel="alternate">{{ t.ui.switch_lang }}</a>
+    </p>
+    <figure class="mast__portrait">
+      {% if photo %}
+      <img src="/static/{{ photo }}" alt="{{ site.name }}" width="720" height="900" loading="eager">
+      {% else %}
+      <div class="placeholder" aria-hidden="true"></div>
+      {% endif %}
+    </figure>
+    <p class="mast__icons">
+      {% for p in site.profiles %}{% if p.url %}
+      <a href="{{ p.url }}" aria-label="{{ p.label }}" title="{{ p.label }}">{{ ico(p.key) }}<span class="vh">{{ p.label }}</span></a>
+      {% endif %}{% endfor %}
+      <a href="mailto:{{ site.email }}" aria-label="{{ t.ui.email }}" title="{{ t.ui.email }}">{{ ico('email') }}<span class="vh">{{ t.ui.email }}</span></a>
+    </p>
+  </div>
+</header>
+{% endblock %}
+
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <p class="foot__name">{{ site.name }}</p>
+    <p class="foot__reach"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="foot__icons">
+      {% for p in site.profiles %}{% if p.url %}
+      <a href="{{ p.url }}" aria-label="{{ p.label }}" title="{{ p.label }}">{{ ico(p.key) }}<span class="vh">{{ p.label }}</span></a>
+      {% endif %}{% endfor %}
+      <a href="mailto:{{ site.email }}" aria-label="{{ t.ui.email }}" title="{{ t.ui.email }}">{{ ico('email') }}<span class="vh">{{ t.ui.email }}</span></a>
+    </p>
+    <div class="sprites">
+      <div class="sprite sprite--{{ sprites.get(page, "idle") }}" role="img" aria-label="{{ t.ui.sprite_alt }}"></div>
+      <div class="sprite sprite--t-{{ sprites.get(page, "idle") }}" role="img" aria-label="{{ t.ui.sprite_alt_2 }}"></div>
+    </div>
+    <p class="foot__note">
+      <span class="f">{{ t.ui.no_analytics }}</span><span class="f">{{ t.ui.footer_rights }}</span><span class="f">{{ t.ui.sprite_credit }}</span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

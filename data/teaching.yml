@@ -1,0 +1,81 @@
+- id: usal-habla-lenguaje
+  kind: university
+  role:
+    en: Teaching Assistant
+    es: Docencia en el marco del contrato predoctoral
+  course: "Habla y lenguaje"
+  programme: Grado en Audiología
+  institution: Universidad de Salamanca
+  years: "2024-"
+
+- id: usal-linguistica-general
+  kind: university
+  role:
+    en: Teaching Assistant
+    es: Docencia en el marco del contrato predoctoral
+  course: "Lingüística general"
+  programme: Grado en Estudios Ingleses
+  institution: Universidad de Salamanca
+  years: "2024-2025"
+
+- id: iuce-metodologias-queer
+  kind: course
+  role:
+    en: Instructor
+    es: Profesora
+  course: "Metodologías queer: repensando métodos y prácticas en la investigación social"
+  institution: Universidad de Salamanca
+  years: "2025-2026"
+  detail:
+    en: Continuing-education course for university teaching staff, run by the IUCE.
+    es: Curso del IUCE para la formación continua del personal docente e investigador de la universidad.
+  hours: 10
+
+- id: ele-destrezas-escritas
+  kind: course
+  role:
+    en: Instructor
+    es: Profesora
+  course: "II edición del curso «Formación de Profesores de Español como Lengua Extranjera (ELE)»"
+  module: "Destrezas escritas y competencia léxica"
+  institution: Universidad de Salamanca
+  years: "2024-2025"
+  dates:
+    en: 23 June - 11 July 2025
+    es: del 23 de junio al 11 de julio de 2025
+  hours: 10
+
+- id: viu-tfm
+  kind: other
+  role:
+    en: Master's dissertation supervisor
+    es: Directora de Trabajos de Fin de Máster
+  programme: "Máster Universitario en Enseñanza del Español como Lengua Extranjera"
+  institution: Universidad Internacional de Valencia
+  years: "2024"
+  detail:
+    en: Four dissertations supervised and ten examining boards for the defenses.
+    es: Cuatro trabajos dirigidos y diez tribunales de defensa.
+
+- id: accem-ele
+  kind: other
+  role:
+    en: Teacher of Spanish
+    es: Profesora de español
+  institution: Accem Salamanca
+  years: "2022-2024"
+  hours: 1932
+  detail:
+    en: Adapted Spanish classes for refugees and applicants for international protection, preparation courses for the CCSE citizenship test, and workshops on settling in Spain, technology, written expression and equality.
+    es: Clases adaptadas de español para personas refugiadas y solicitantes de Protección Internacional, cursos de preparación de la prueba CCSE y talleres de adaptación a la vida en España, nuevas tecnologías, expresión escrita e igualdad.
+
+- id: cursos-internacionales
+  kind: other
+  role:
+    en: Teacher of Spanish
+    es: Profesora de español
+  institution: Cursos Internacionales, Universidad de Salamanca
+  years: "2022"
+  detail:
+    en: Intensive Spanish for international groups at levels A2 to B2 in July 2022, with materials written for teenage learners of Italian background.
+    es: Español intensivo para grupos internacionales de los niveles A2 a B2 en julio de 2022, con materiales elaborados para estudiantes adolescentes de origen italiano.

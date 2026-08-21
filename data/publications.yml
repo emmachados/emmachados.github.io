@@ -1,0 +1,129 @@
+- id: philologia-2027
+  type: article
+  year: 2027
+  status: forthcoming
+  authors: ["Machado de Souza, E."]
+  title: "La feminización vocal en español: lagunas de validación en los protocolos clínicos"
+  venue: Philologia Hispalensis
+  volume: 41
+  issue: 1
+  peer_reviewed: true
+  indicators: [Q3, C1, "A+"]
+  lines: [transqueer, clinical]
+  lang: es
+  featured: true
+
+- id: kkf-2026
+  type: article
+  year: 2026
+  status: forthcoming
+  authors: ["Machado de Souza, E."]
+  title: "Hacking the biomedical discourse: Trans digital counterpublics and the self-governance of health"
+  venue: "Kvinder, Køn & Forskning"
+  issue: 3
+  url: null
+  peer_reviewed: true
+  indicators: []
+  lines: [transqueer, discourse]
+  lang: en
+  featured: true
+
+- id: feral-2026
+  type: article
+  year: 2026
+  status: published
+  authors: ["Machado de Souza, E."]
+  title: "Reframing neurodivergence: How digital neuroqueer communities resist pathologizing discourses and generate counter-hegemonic narratives. A critical discourse analysis of neuroqueer counter-narratives"
+  venue: Feral Feminisms
+  volume: 17
+  pages: "46-64"
+  doi: 10.5281/zenodo.19681416
+  url: https://feralfeminisms.com/reframing-neurodivergence-how-digital-neuroqueer-communities-resist-pathologizing-discourses-and-generate-counter-hegemonic-narratives-a-critical-discourse-analysis-of-neuroqueer-counter-narratives/
+  peer_reviewed: true
+  indicators: []
+  lines: [transqueer, discourse]
+  lang: en
+  featured: true
+
+- id: lds-2026
+  type: article
+  year: 2026
+  status: published
+  authors: ["Machado de Souza, E."]
+  title: "Naming, excluding, disciplining: Contested parliamentary discourses on trans issues"
+  venue: "Language, Discourse & Society"
+  volume: 14
+  issue: 1
+  pages: "11-29"
+  url: https://www.language-and-society.org/volume-14-number-127-june-2026/
+  peer_reviewed: true
+  indicators: [Q3]
+  lines: [transqueer, discourse]
+  lang: en
+  featured: true
+
+- id: maricorners-2025
+  type: article
+  year: 2025
+  status: published
+  authors: ["Machado de Souza, E."]
+  title: "La voz como herramienta de identidad y resistencia: modulación vocal y autoafirmación en personas trans y no binarias"
+  venue: "MariCorners: Revista de Estudios Interdisciplinares LGTBIA+ y Queer"
+  volume: 2
+  issue: 2
+  pages: "161-194"
+  doi: 10.24197/MCREILQ.2.2025.161-194
+  peer_reviewed: true
+  indicators: []
+  lines: [transqueer, sociophonetics]
+  lang: es
+  featured: true
+
+- id: lengua-mutante-2025
+  type: chapter
+  outreach: true
+  year: 2025
+  status: published
+  authors: ["Machado de Souza, E."]
+  title: "¿Cómo hablamos cuando cuidamos? Claves del lenguaje inclusivo en la atención sanitaria"
+  container: "Lengua mutante: reflexiones sobre lenguaje inclusivo"
+  editors: ["López, A."]
+  pages: "331-356"
+  publisher: Pie de Página
+  url: null
+  peer_reviewed: false
+  indicators: []
+  lines: [transqueer]
+  lang: es
+
+- id: pragmalinguistica-2023
+  type: article
+  year: 2023
+  status: published
+  authors: ["Ivanova, O.", "Machado de Souza, E.", "Méndez Sanz, S.", "Ochoa Obeso, E."]
+  title: "La evaluación de la competencia pragmática en las enfermedades neurodegenerativas: retos teóricos y metodológicos"
+  venue: Pragmalingüística
+  volume: 31
+  pages: "193-220"
+  doi: 10.25267/PRAGMALINGUISTICA.2023.I31.09
+  peer_reviewed: true
+  indicators: [Q3, C1, B]
+  lines: [clinical]
+  lang: es
+  featured: true
+
+- id: peterlang-2023
+  type: chapter
+  year: 2023
+  status: published
+  authors: ["Machado de Souza, E.", "Ivanova, O.", "García Meilán, J. J."]
+  title: "La depresión y el habla: características fonéticas de hablantes de español con depresión"
+  container: "Lingüística clínica en el ámbito hispánico: un panorama de estudios"
+  editors: ["Codesido García, A.", "Hernández Sacristán, C.", "Marrero-Aguiar, V."]
+  pages: "131-155"
+  publisher: Peter Lang
+  doi: 10.3726/b20412
+  peer_reviewed: true
+  indicators: []
+  lines: [clinical]
+  lang: es

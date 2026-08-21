@@ -1,0 +1,175 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage[a4paper,top=22mm,bottom=22mm,left=24mm,right=24mm]{geometry}
+\usepackage[<% if lang == 'es' %>spanish<% else %>english<% endif %>]{babel}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\definecolor{ink}{HTML}{12161C}
+\definecolor{muted}{HTML}{4E5359}
+\color{ink}
+
+\setmainfont{EBGaramond.ttf}[
+  Path = ./fonts/ ,
+  ItalicFont = EBGaramond-Italic.ttf ,
+  BoldFont = EBGaramond.ttf ,
+  BoldFeatures = {RawFeature={axis={wght=700}}} ,
+  BoldItalicFont = EBGaramond-Italic.ttf ,
+  BoldItalicFeatures = {RawFeature={axis={wght=700}}} ,
+]
+\newfontfamily\displayfont{BodoniModa.ttf}[Path = ./fonts/, RawFeature={axis={wght=600}}]
+\newfontfamily\apparatusfont{EBGaramond-Italic.ttf}[Path = ./fonts/]
+
+\titleformat{\section}{\bfseries\normalsize}{}{0pt}{}[\vspace{-0.6ex}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{2.0ex plus 0.5ex}{1.0ex}
+
+\setlist[itemize]{leftmargin=1.1em, itemsep=0.6ex, topsep=0.4ex, parsep=0pt, label={}}
+\newcommand{\apparatus}[1]{{\apparatusfont\color{muted}#1}}
+
+\newenvironment{records}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{0.24\textwidth}%
+    \setlength{\labelwidth}{0.21\textwidth}%
+    \setlength{\labelsep}{0.03\textwidth}%
+    \setlength{\itemsep}{0.85ex}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{0.6ex}%
+    \renewcommand{\makelabel}[1]{\apparatus{##1}\hfill}%
+  }%
+}{\end{list}}
+\newcommand{\recordtitle}[1]{\textbf{#1}}
+
+\newenvironment{apalist}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{1.27cm}%
+    \setlength{\itemindent}{-1.27cm}%
+    \setlength{\listparindent}{0pt}%
+    \setlength{\itemsep}{0.7ex}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{0.6ex}%
+    \renewcommand{\makelabel}[1]{}%
+  }%
+}{\end{list}}
+\setlist[itemize,2]{leftmargin=1.1em, itemsep=0.3ex, topsep=0.3ex, label={\textperiodcentered}}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+
+{\displayfont\fontsize{28}{30}\selectfont << site.name >>}\\[0.7ex]
+<< t.position[site.position_key] >>, << site.department >>, << site.institution >>\\[0.5ex]
+\apparatus{<< site.email >>, ORCID << site.profiles[0].value >>}
+
+\vspace{1.2ex}
+\rule{\textwidth}{0.8pt}
+
+<% if education %>
+\section*{<< t.education.title >>}
+\begin{records}
+<% for e in education %>
+  \item[<< e.year_start >>–<% if e.year_end %><< e.year_end >><% endif %>]
+        \recordtitle{<< tex(e.degree[lang]) >>}\\
+        \apparatus{<< tex(e.institution) >><% if not e.year_end %>, << tex(t.education.in_progress) >><% endif %>}
+        <% if e.detail %>\\ << tex(e.detail[lang]) >><% endif %>
+        <% if e.work_title %>\\ << tex(e.work_label[lang]) >>: \emph{<< tex(e.work_title) >>}.<% endif %>
+
+<% endfor %>
+\end{records}
+<% endif %>
+
+\section*{<< tex(t.cv.experience) >>}
+\begin{records}
+<% for e in experience %>
+  \item[<< tex(year_span(e.start, e.end)) >>]
+        \recordtitle{<< tex(e.role[lang]) >>}\\
+        \apparatus{<< tex(e.org) >><% if e.place %>, << tex(e.place[lang]) >><% endif %>}
+        <% if e.detail %>
+        \begin{itemize}[label=\textperiodcentered, leftmargin=1.2em, labelsep=0.5em, itemsep=0.25ex, topsep=0.5ex, parsep=0pt]
+        <% for d in e.detail[lang] %>
+          \item << tex(d) >>
+        <% endfor %>
+        \end{itemize}
+        <% endif %>
+
+<% endfor %>
+\end{records}
+
+\section*{<< tex(t.cv.projects) >>}
+<% for scope in project_scopes %>
+<% set items = projects.projects | selectattr('scope', 'equalto', scope) | list %>
+<% if items %>
+\subsection*{\normalsize\bfseries << tex(t.cv.scope[scope]) >>}
+\begin{records}
+<% for p in items %>
+  \item[<% if p.year_start %><< p.year_start >><% if p.year_end and p.year_end != p.year_start %>–<< p.year_end >><% endif %><% endif %>]
+        \recordtitle{<< tex(p.title) >>}\\
+        \apparatus{<< tex(p.role[lang]) >><% if p.pi %>, << tex(t.cv.pi) >> << tex(p.pi) >><% endif %><% if p.funder %>, << tex(p.funder) >><% endif %><% if p.contract %>, << tex(p.contract[lang]) >><% endif %>}
+
+<% endfor %>
+\end{records}
+<% endif %>
+<% endfor %>
+
+\section*{<< tex(t.publications.title) >>}
+\begin{apalist}
+<% for pub in publications %>
+  \item << apa(pub) >><% if pub.doi %> \apparatus{https://doi.org/<< tex(pub.doi) >>}<% endif %>
+
+<% endfor %>
+\end{apalist}
+
+\section*{<< tex(t.talks.title) >>}
+\begin{apalist}
+<% for talk in talks %>
+  \item << tex(authors(talk.authors)) >> (<< tex(date_range(talk.date_start, talk.date_end)) >>).
+        << tex(talk.title) >>. \emph{<< tex(talk.event) >>}, << tex(talk.host) >>.<% if talk.kind in t.talks.kind %> [<< tex(t.talks.kind[talk.kind]) >>]<% endif %>
+
+<% endfor %>
+\end{apalist}
+
+\section*{<< tex(t.teaching.title) >>}
+\begin{records}
+<% for e in teaching %>
+  \item[<< tex(e.years) >>]
+        \recordtitle{<< tex(e.course or e.role[lang]) >>}\\
+        \apparatus{<% if e.course %><< tex(e.role[lang]) >>, <% endif %><% if e.programme %><< tex(e.programme) >>, <% endif %><< tex(e.institution) >><% if e.hours %>, << e.hours >> << tex(t.teaching.hours) >><% endif %>}
+        <% if e.detail %>\\ << tex(e.detail[lang]) >><% endif %>
+
+<% endfor %>
+\end{records}
+
+\section*{<< tex(t.service.title) >>}
+<% for kind in service_kinds %>
+<% set items = service | selectattr('kind', 'equalto', kind) | list %>
+<% if items %>
+\subsection*{\normalsize\bfseries << tex(t.service.kind[kind]) >>}
+\begin{records}
+<% for e in items %>
+  \item[<< e.years | join(', ') >>]
+        \recordtitle{<< tex(e.panel_title or e.of) >>}\\
+        \apparatus{<% if e.panel_title %><< tex(e.of) >>, <% endif %><< tex(e.role[lang]) >><% if e.convened_with %>, << tex(t.service.with_label) >> << tex(authors(e.convened_with)) >><% endif %>, << tex(e.org) >>}
+
+<% endfor %>
+\end{records}
+<% endif %>
+<% endfor %>
+
+\section*{<< tex(t.cv.awards) >>}
+\begin{records}
+<% for a in awards %>
+  \item[<< a.years | join(', ') >>]
+        \recordtitle{<< tex(a.role[lang]) >>}<% if a.of or a.org %>\\
+        \apparatus{<% if a.of %><< tex(a.of) >><% endif %><% if a.of and a.org %>, <% endif %><% if a.org %><< tex(a.org[lang] if a.org is mapping else a.org) >><% endif %>}<% endif %>
+        <% if a.detail %>\\ << tex(a.detail[lang]) >><% endif %>
+
+<% endfor %>
+\end{records}
+
+\vspace{1ex}
+\apparatus{<< site.base_url >>, << tex(t.cv.updated) >>: << build_date >>}
+
+\end{document}

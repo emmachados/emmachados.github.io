@@ -1,0 +1,195 @@
+lang_name: Español
+other_lang_name: English
+
+meta:
+  title: Emma Machado de Souza
+  description: Emma Machado de Souza es investigadora predoctoral en lingüística en la Universidad de Salamanca. Trabaja sobre lingüística trans y queer, sociofonética, lingüística clínica y análisis crítico del discurso.
+
+position:
+  predoc: Investigadora predoctoral en formación
+group_role:
+  member: Miembro
+
+nav:
+  home: Perfil
+  publications: Publicaciones
+  talks: Comunicaciones
+  teaching: Docencia
+  service: Actividades
+  cv: CV
+  software: Software
+
+home:
+  bio_1: >-
+    Soy doctoranda en el Departamento de Lengua Española de la Universidad
+    de Salamanca, con un contrato PR-2023 de la Junta de Castilla y León y
+    el FSE+. Mi tesis pregunta cómo se producen y se oyen las voces
+    transfemeninas en español peninsular, lo que supone medir la acústica
+    del habla espontánea y preguntar a los oyentes qué creen oír.
+  bio_2: >-
+    También publico en lingüística clínica, principalmente acerca del habla
+    de personas con depresión mayor o con deterioro cognitivo, y sobre el
+    lenguaje que se emplea al hablar acerca de las personas trans y de la
+    neurodivergencia.
+  standfirst: Investigadora predoctoral en formación en Lingüística en la Universidad de Salamanca.
+  profile_heading: Perfil
+  lines_heading: En qué trabajo
+  selected_heading: Publicaciones seleccionadas
+  selected_more: Todas las publicaciones
+
+lines:
+  transqueer: Lingüística trans y queer
+  sociophonetics: Sociofonética
+  clinical: Lingüística clínica
+  discourse: Análisis crítico del discurso
+  technology: Lingüística computacional
+
+line_blocks:
+  - key: transqueer
+    title: Lingüística trans y queer
+    text: >-
+      La lengua como testimonio de las vidas trans y queer, así como
+      instrumento que se usa sobre ellas. Trabajo con voces, comunidades en
+      línea, debates parlamentarios y protocolos clínicos: es decir, con
+      personas que se describen a sí mismas y con desconocidos que lo hacen
+      en su lugar (y con más páginas).
+  - key: sociophonetics
+    title: Sociofonética
+    text: >-
+      La voz como comportamiento social, medida acústicamente. Habla
+      espontánea y experimentos de percepción, partiendo de que lo que un
+      oyente hace con una voz interesa al menos tanto como lo que quien
+      habla quiso decir con ella.
+  - key: clinical
+    title: Lingüística clínica
+    text: >-
+      El habla en la depresión y en el deterioro cognitivo, y la distancia
+      entre una diferencia estadísticamente significativa y un marcador
+      diagnóstico. La bibliografía la recorre más rápido que yo.
+  - key: discourse
+    title: Análisis crítico del discurso
+    text: >-
+      Cómo los discursos parlamentarios, biomédicos y en línea nombran y
+      regulan la identidad trans y la neurodivergencia y qué escriben en
+      respuesta las comunidades a las que se dirigen.
+  - key: technology
+    title: Lingüística computacional
+    text: >-
+      Corpus, clasificadores y grandes modelos de lengua, para preguntas
+      demasiado grandes como para responderlas a mano. Son además excelentes
+      informantes sobre lo que se ha dicho de las personas que describen,
+      puesto que lo han leído casi todo.
+
+publications:
+  title: Publicaciones
+  intro: Artículos y capítulos de libro, de más reciente a más antiguo.
+  status:
+    in_press: En prensa
+    forthcoming: En prensa
+  type:
+    article: Artículo
+    chapter: Capítulo de libro
+    review: Reseña
+    edited: Edición de volumen
+  outreach_heading: Divulgación
+  peer_note: Todo lo que figura en la lista anterior está sometido a revisión por pares.
+  in: En
+  ed: Ed.
+  eds: Eds.
+
+talks:
+  title: Comunicaciones
+  intro: Comunicaciones, ponencias invitadas y pósteres, de más reciente a más antiguo.
+  kind:
+    invited: Ponencia invitada
+    poster: Póster
+  panel: En el panel
+
+teaching:
+  title: Docencia
+  intro: Docencia universitaria, cursos impartidos y trabajo anterior como profesora de español.
+  hours: horas
+  course_page: Diapositivas y bibliografía
+  materials_note: >-
+    Sobre los materiales: son los que llevé de verdad al aula, no una versión
+    pulida para internet. Sed amables. Todavía estoy aprendiendo a enseñar.
+  kind:
+    university: Docencia universitaria
+    course: Cursos impartidos
+    other: Dirección de trabajos y docencia anterior
+
+service:
+  title: Actividades
+  intro: Presidencia, comités, coordinación de paneles, revisión, trabajo en corpus y divulgación.
+  with_label: con
+  kind:
+    chair: Presidencia
+    committee: Comités
+    panel: Paneles coordinados
+    review: Revisión
+    corpus: Colaboración en corpus
+    outreach: Divulgación
+
+cv:
+  title: Currículum
+  download: Descargar en PDF
+  updated: Última actualización
+  research: Investigación
+  position: Puesto
+  dissertation: Investigación doctoral
+  scope:
+    international: Proyectos internacionales
+    own: Proyectos propios
+    contract: Contratos de investigación
+  projects: Proyectos
+  pi: Dirigido por
+  supervised_by: Dirigida por
+  experience: Experiencia
+  awards: Distinciones y financiación
+  present: actualidad
+
+course:
+  materials: Diapositivas
+  recommended: Bibliografía recomendada
+  further: Bibliografía para ampliar
+  links: Vídeo, audio y datos
+  kind:
+    video: Vídeo
+    podcast: Audio
+    data: Datos
+    text: Lectura
+  session: Sesión
+  pages: páginas
+  back: Toda la docencia
+  materials_licence: >-
+    Las diapositivas son de mi autoría y se distribuyen con licencia
+    CC BY-NC-SA 4.0: se pueden reutilizar y adaptar citando la fuente, sin fines
+    comerciales y manteniendo la misma licencia.
+  reading_note: >-
+    Bibliografía del curso, con la referencia de cada lectura.
+
+software:
+  title: Software
+  intro: >-
+    Herramientas de investigación escritas para mi propio trabajo y para
+    colaboradores. Ninguna tiene todavía una versión pública, de modo que esta
+    página recoge descripciones y ninguna descarga.
+
+education:
+  title: Formación
+  in_progress: en curso
+
+ui:
+  nav_label: Navegación principal
+  skip: Ir al contenido
+  email: Correo
+  sprite_alt: Un sprite de Wigglytuff
+  sprite_alt_2: Un sprite de Trubbish
+  sprite_credit: >-
+    Los sprites del pie proceden del archivo SpriteCollab de PMD Collab, donde
+    se atribuyen a Chunsoft y a PowerCristal. Pokémon es una marca de Nintendo,
+    Creatures y Game Freak.
+  contact: Contacto
+  switch_lang: Read in English
+  footer_rights: Los textos de este sitio están disponibles bajo CC BY 4.0.
+  no_analytics: Este sitio no usa cookies ni analítica.

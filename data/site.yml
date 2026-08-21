@@ -1,0 +1,55 @@
+domain: emmamachado.com
+base_url: https://emmamachado.com
+
+name: Emma Machado de Souza
+short_name: Emma Machado
+name_lines: ["Emma", "Machado", "de Souza"]
+citation_name: "Machado de Souza, E."
+
+position_key: predoc
+department: Departamento de Lengua Española (área de Lingüística General)
+institution: Universidad de Salamanca
+institution_url: https://www.usal.es
+area: Lingüística General
+group:
+  name: LinGap
+  role_key: member
+
+email: emmachado@usal.es
+
+profiles:
+  - key: orcid
+    label: ORCID
+    value: 0000-0003-4443-9739
+    url: https://orcid.org/0000-0003-4443-9739
+  - key: scholar
+    label: Google Scholar
+    url: https://scholar.google.com/citations?user=K0BgiNYAAAAJ&hl=es
+  - key: researchgate
+    label: ResearchGate
+    url: https://www.researchgate.net/profile/Emma-Machado-De-Souza
+  - key: osf
+    label: OSF
+    url: https://osf.io/nmdf3/
+
+photo:
+  en: img/emma.webp
+  es: img/emma-2.webp
+
+languages:
+  - code: en
+    label: English
+    prefix: ""
+  - code: es
+    label: Español
+    prefix: "/es"
+
+pages:
+  home:         {en: "/",              es: "/es/",                 nav: true}
+  publications: {en: "/publications/", es: "/es/publicaciones/",   nav: true}
+  talks:        {en: "/talks/",        es: "/es/comunicaciones/",  nav: true}
+  teaching:     {en: "/teaching/",     es: "/es/docencia/",        nav: true}
+  service:      {en: "/service/",      es: "/es/actividades/",     nav: true}
+  cv:           {en: "/cv/",           es: "/es/cv/",              nav: true}
+  software:     {en: "/software/",     es: "/es/software/",        nav: false, noindex: true}
+  course_mq:    {en: "/teaching/metodologias-queer/", es: "/es/docencia/metodologias-queer/", nav: false}

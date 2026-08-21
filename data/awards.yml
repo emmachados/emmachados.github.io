@@ -1,0 +1,37 @@
+- id: innova2025
+  role:
+    en: Best oral presentation in Arts and Humanities
+    es: Premio a la mejor comunicación oral en Artes y Humanidades
+  of: IV Jornadas Internacionales de Jóvenes Investigadores
+  org: INNOVA-Salamanca / ReadytoPub
+  years: [2025]
+
+- id: lavender2025
+  role:
+    en: Scholarship to attend the Lavender Languages Institute
+    es: Beca de asistencia al Lavender Languages Institute
+  years: [2025]
+
+- id: predoc
+  role:
+    en: Predoctoral research contract, PR-2023
+    es: Contrato predoctoral, programa PR-2023
+  org:
+    en: Junta de Castilla y León, co-financed by the European Social Fund Plus
+    es: Junta de Castilla y León, cofinanciado por el Fondo Social Europeo Plus
+  years: [2024]
+
+- id: musale2022
+  role:
+    en: Extraordinary Master's Prize, first in cohort
+    es: Premio Extraordinario de Máster, 1.ª de la promoción
+  of: Máster Universitario en la Enseñanza del Español como Lengua Extranjera
+  org: Universidad de Salamanca
+  years: [2022]
+
+- id: tfg2021
+  role:
+    en: Undergraduate dissertation, awarded with distinction
+    es: Trabajo de Fin de Grado con Matrícula de Honor
+  org: Universidad de Salamanca
+  years: [2021]

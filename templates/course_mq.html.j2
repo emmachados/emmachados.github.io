@@ -1,0 +1,62 @@
+{% extends "base.html.j2" %}
+{% set course = courses[0] %}
+{% block title %}{{ course.title }}, {{ site.name }}{% endblock %}
+{% block description %}{{ course.detail[lang] }}{% endblock %}
+{% block main %}
+<div class="doc">
+<h1 class="doc__title">{{ course.title }}</h1>
+<p class="doc__intro">{{ course.detail[lang] }}</p>
+
+<p class="entry__meta entry__meta--stack course__meta">
+  <span class="f">{{ course.institution }}</span><span class="f">{{ course.years }}</span><span class="f">{{ course.hours }} {{ t.teaching.hours }}</span>
+</p>
+
+{% macro reference(r) %}
+  {% if r.get('type') == 'unresolved' %}
+  <li class="reading__item">{{ r.label }}</li>
+  {% else %}
+  <li class="reading__item">{{ apa_plain(r) | safe }}{% if r.get('doi') %} <a class="reading__doi" href="https://doi.org/{{ r.get('doi') }}">https://doi.org/{{ r.get('doi') }}</a>{% elif r.get('url') %} <a class="reading__doi" href="{{ r.get('url') }}">{{ r.get('url') }}</a>{% endif %}</li>
+  {% endif %}
+{% endmacro %}
+
+{% for s in course.sessions %}
+<section class="sec">
+  <h2 class="sec__title">{{ t.course.session }} {{ s.n }}. {{ s.title[lang] }}</h2>
+
+  <p class="materials">
+    <a href="/static/teaching/{{ s.deck }}" download>{{ t.course.materials }}</a>
+    <span class="mark">PDF, {{ s.pages }} {{ t.course.pages }}</span>
+  </p>
+
+  <h3 class="sec__sub">{{ t.course.recommended }}</h3>
+  <ul class="reading">
+    {% for r in s.reading.recommended %}{{ reference(r) }}{% endfor %}
+  </ul>
+
+  <h3 class="sec__sub">{{ t.course.further }}</h3>
+  <ul class="reading">
+    {% for r in s.reading.further %}{{ reference(r) }}{% endfor %}
+  </ul>
+
+  {% for kind in ['video', 'podcast', 'data', 'text'] %}
+  {% set items = s.links | selectattr('kind', 'equalto', kind) | list %}
+  {% if items %}
+  <h3 class="sec__sub">{{ t.course.kind[kind] }}</h3>
+  <ul class="reading reading--links">
+    {% for l in items %}
+    <li class="reading__item">
+      {% if l.creator %}{{ l.creator }} {% endif %}({{ l.date }}). <em>{{ l.title }}</em> [{{ l.medium }}]{% if l.site %}. {% if 'podcast' in l.medium %}In {% endif %}{{ l.site }}{% endif %}.
+      <a class="reading__doi" href="{{ l.url }}">{{ l.url }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+<p class="aside">{{ t.course.materials_licence }}</p>
+<p class="aside">{{ t.course.reading_note }}</p>
+<p class="more"><a class="tlink" href="{{ path_for('teaching') }}">{{ t.course.back }}</a></p>
+</div>
+{% endblock %}
