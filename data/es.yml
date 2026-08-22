@@ -180,6 +180,8 @@ education:
   in_progress: en curso
 
 ui:
+  menu_open: Menú
+  menu_close: Cerrar
   nav_label: Navegación principal
   skip: Ir al contenido
   email: Correo

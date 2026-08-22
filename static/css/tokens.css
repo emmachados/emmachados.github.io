@@ -40,6 +40,8 @@
 
   --z-sticky: 200;
 
+  --shade-overlay: oklch(0% 0 0 / 0.38);
+
   --color-paper:      oklch(96.5% 0.018 320);
   --color-paper-2:    oklch(93.0% 0.030 320);
   --color-paper-3:    oklch(88.0% 0.046 322);

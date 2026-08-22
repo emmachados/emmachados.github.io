@@ -32,16 +32,30 @@
     </p>
     {% set name_lines %}{% for l in site.name_lines %}<span>{{ l }}</span>{% if not loop.last %} {% endif %}{% endfor %}{% endset %}
     <p class="mast__name">{% if page == 'home' %}{{ name_lines }}{% else %}<a href="{{ path_for('home') }}">{{ name_lines }}</a>{% endif %}</p>
-    <nav class="mast__nav" aria-label="{{ t.ui.nav_label }}">
-      <ul>
-        {% for pid, meta in nav %}
-        <li><a href="{{ path_for(pid) }}"{% if pid == page %} aria-current="page"{% endif %}>{{ t.nav[pid] }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-    <p class="mast__lang">
-      <a href="{{ path_for(page, other_lang) }}" hreflang="{{ other_lang }}" rel="alternate">{{ t.ui.switch_lang }}</a>
-    </p>
+    <details class="mast__menu">
+      <summary class="mast__toggle">
+        <span class="mast__toggle__on">{{ ico('menu') }}{{ t.ui.menu_open }}</span>
+        <span class="mast__toggle__off">{{ ico('close') }}{{ t.ui.menu_close }}</span>
+      </summary>
+      <div class="mast__panel">
+        <nav class="mast__nav" aria-label="{{ t.ui.nav_label }}">
+          <ul>
+            {% for pid, meta in nav %}
+            <li><a href="{{ path_for(pid) }}"{% if pid == page %} aria-current="page"{% endif %}>{{ t.nav[pid] }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+        <p class="mast__icons">
+          {% for p in site.profiles %}{% if p.url %}
+          <a href="{{ p.url }}" aria-label="{{ p.label }}" title="{{ p.label }}">{{ ico(p.key) }}<span class="vh">{{ p.label }}</span></a>
+          {% endif %}{% endfor %}
+          <a href="mailto:{{ site.email }}" aria-label="{{ t.ui.email }}" title="{{ t.ui.email }}">{{ ico('email') }}<span class="vh">{{ t.ui.email }}</span></a>
+        </p>
+        <p class="mast__lang">
+          <a href="{{ path_for(page, other_lang) }}" hreflang="{{ other_lang }}" rel="alternate">{{ t.ui.switch_lang }}</a>
+        </p>
+      </div>
+    </details>
     <figure class="mast__portrait">
       {% if photo %}
       <img src="/static/{{ photo }}" alt="{{ site.name }}" width="720" height="900" loading="eager">
@@ -49,12 +63,6 @@
       <div class="placeholder" aria-hidden="true"></div>
       {% endif %}
     </figure>
-    <p class="mast__icons">
-      {% for p in site.profiles %}{% if p.url %}
-      <a href="{{ p.url }}" aria-label="{{ p.label }}" title="{{ p.label }}">{{ ico(p.key) }}<span class="vh">{{ p.label }}</span></a>
-      {% endif %}{% endfor %}
-      <a href="mailto:{{ site.email }}" aria-label="{{ t.ui.email }}" title="{{ t.ui.email }}">{{ ico('email') }}<span class="vh">{{ t.ui.email }}</span></a>
-    </p>
   </div>
 </header>
 {% endblock %}

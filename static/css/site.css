@@ -67,15 +67,16 @@ em, i { font-style: italic; }
   display: grid;
   gap: var(--space-sm) var(--space-lg);
   padding: var(--space-md) var(--page-gutter);
-  align-items: baseline;
-  grid-template-areas: "name icons" "nav nav" "lang lang";
+  align-items: center;
+  grid-template-areas: "name menu";
   grid-template-columns: minmax(0, 1fr) auto;
 }
 .mast__portrait { display: none; }
 .mast__name  { grid-area: name; }
+.mast__menu  { grid-area: menu; }
 .mast__nav   { grid-area: nav; }
 .mast__lang  { grid-area: lang; }
-.mast__icons { grid-area: icons; justify-self: end; }
+.mast__icons { grid-area: icons; }
 .mast__affil { display: none; }
 
 .mast__name {
@@ -123,12 +124,69 @@ em, i { font-style: italic; }
 }
 .mast__icons a:hover { color: var(--color-accent); }
 
-@media (max-width: 26rem) {
-  .mast__inner {
-    grid-template-areas: "name" "icons" "nav" "lang";
-    grid-template-columns: minmax(0, 1fr);
+/* The menu is a disclosure below 60rem and a flat rail above it. */
+.mast__toggle {
+  display: inline-flex; align-items: center; justify-content: flex-end;
+  min-block-size: 2.75rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: var(--text-xs);
+  color: color-mix(in oklch, var(--color-slab-ink) 84%, transparent);
+  transition: color var(--dur-short) var(--ease-out);
+}
+.mast__toggle::-webkit-details-marker { display: none; }
+.mast__toggle:hover { color: var(--color-slab-ink); }
+.mast__toggle > span { display: inline-flex; align-items: center; gap: var(--space-2xs); }
+.mast__toggle > .mast__toggle__off { display: none; }
+.mast__menu[open] > .mast__toggle > .mast__toggle__on { display: none; }
+.mast__menu[open] > .mast__toggle > .mast__toggle__off { display: inline-flex; }
+
+@media (max-width: 59.99rem) {
+  /* Reserved so that fixing the toggle on open does not rewrap the name. */
+  .mast__menu { inline-size: 6.25rem; }
+  .mast__menu[open] > .mast__toggle {
+    position: fixed;
+    inset-block-start: var(--space-md);
+    inset-inline-end: var(--page-gutter);
+    z-index: calc(var(--z-sticky) + 2);
+    background: var(--color-slab-2);
+    padding: var(--space-2xs) var(--space-xs);
   }
-  .mast__icons { justify-self: start; }
+
+  .mast__panel { display: none; }
+  .mast__menu[open] > .mast__panel {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-start: 0;
+    inline-size: min(17rem, 72vw);
+    z-index: calc(var(--z-sticky) + 1);
+    background: var(--color-slab-2);
+    border-inline-end: var(--rule-hair) solid var(--color-slab-rule);
+    box-shadow: 0 0 2rem var(--shade-overlay);
+    padding: var(--space-xl) var(--space-lg);
+    padding-block-end: max(var(--space-lg), env(safe-area-inset-bottom));
+    display: flex; flex-direction: column; gap: var(--space-lg);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .mast__panel .mast__nav ul { flex-direction: column; align-items: stretch; gap: var(--space-2xs); }
+  /* inline-flex so the current-page rule hugs the label instead of spanning the panel */
+  .mast__panel .mast__nav a { display: inline-flex; font-size: var(--text-md); padding-block: var(--space-sm) var(--space-xs); }
+  .mast__panel .mast__icons {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-2xs);
+    border-block-start: var(--rule-hair) solid var(--color-slab-rule);
+    padding-block-start: var(--space-sm);
+  }
+  .mast__panel .mast__icons a { min-inline-size: 0; }
+  .mast__panel .mast__lang a {
+    display: inline-flex; align-items: center;
+    min-block-size: 2.75rem;
+  }
 }
 
 @media (min-width: 60rem) {
@@ -147,6 +205,12 @@ em, i { font-style: italic; }
     gap: var(--space-md);
     overflow-y: auto;
   }
+
+  /* Flatten the disclosure: nav, icons and lang become rail grid items. */
+  .mast__menu { display: contents; }
+  .mast__menu > .mast__toggle { display: none; }
+  .mast__menu::details-content { content-visibility: visible; display: contents; }
+  .mast__panel { display: contents; }
 
   .mast__name span { display: block; }
   .mast__nav { align-self: center; }
