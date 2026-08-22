@@ -233,7 +233,7 @@ em, i { font-style: italic; }
   overflow: hidden;
   display: grid;
 
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.52fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.72fr);
   column-gap: var(--space-lg);
   align-items: end;
   padding: var(--space-xl) var(--page-gutter) 0;
@@ -289,7 +289,13 @@ em, i { font-style: italic; }
 }
 
 @media (max-width: 30rem) {
-  .fold { grid-template-columns: minmax(0, 1fr) minmax(0, 0.42fr); column-gap: var(--space-sm); }
+  .fold {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
+    column-gap: var(--space-sm);
+    /* Scales down to keep "Machado" on one line in the narrowed type column;
+       reaches the base 2.8rem at the 30rem boundary. */
+    --text-name: clamp(2.3rem, 9.5vw, 2.8rem);
+  }
   .fold__stand { font-size: var(--text-base); }
 }
 
@@ -580,6 +586,20 @@ main { padding-block-end: var(--space-3xl); }
 @media (prefers-reduced-motion: reduce) { .sprite { animation: none; } }
 @media (max-width: 40rem) { .sprites { --s: 2; gap: var(--space-md); } }
 @media (max-width: 26rem) { .sprites { --s: 1.6; gap: var(--space-sm); } }
+
+@media (max-width: 59.99rem) {
+  .foot__inner {
+    padding-block: var(--space-xl);
+    padding-block-end: max(var(--space-xl), env(safe-area-inset-bottom));
+    gap: var(--space-md) var(--space-sm);
+    align-items: center;
+  }
+  .foot__name { display: none; }
+  .foot__inner > .foot__reach { grid-column: 1; grid-row: 1; }
+  .foot__inner > .sprites { grid-column: 2; grid-row: 1; align-self: center; }
+  .foot__inner > .foot__icons { grid-column: 1 / -1; grid-row: 2; gap: var(--space-xs); }
+  .foot__inner > .foot__note { grid-column: 1 / -1; grid-row: 3; }
+}
 
 .sprite--idle {
   --w: 26; --h: 25; --steps: 27;
