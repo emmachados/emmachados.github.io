@@ -9,7 +9,7 @@ or third-party requests.
 ```sh
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-.venv/bin/python build.py            # 16 pages into _site/
+.venv/bin/python build.py            # 18 pages into _site/
 .venv/bin/python build.py --cv       # plus both CV PDFs; needs LuaLaTeX
 cd _site && python3 -m http.server 8801
 ```

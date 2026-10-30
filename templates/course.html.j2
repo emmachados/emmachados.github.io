@@ -1,5 +1,5 @@
 {% extends "base.html.j2" %}
-{% set course = courses[0] %}
+{% set course = courses | selectattr('page', 'equalto', page) | first %}
 {% block title %}{{ course.title }}, {{ site.name }}{% endblock %}
 {% block description %}{{ course.detail[lang] }}{% endblock %}
 {% block main %}
@@ -24,22 +24,23 @@
   <h2 class="sec__title">{{ t.course.session }} {{ s.n }}. {{ s.title[lang] }}</h2>
 
   <p class="materials">
+    {% if s.get('deck') %}
     <a href="/static/teaching/{{ s.deck }}" download>{{ t.course.materials }}</a>
     <span class="mark">PDF, {{ s.pages }} {{ t.course.pages }}</span>
+    {% else %}
+    <span class="mark">{{ t.course.after_session }}</span>
+    {% endif %}
   </p>
 
-  <h3 class="sec__sub">{{ t.course.recommended }}</h3>
+  {% for key in ['set', 'recommended', 'further'] if s.reading.get(key) %}
+  <h3 class="sec__sub">{{ t.course[key ~ '_reading'] }}</h3>
   <ul class="reading">
-    {% for r in s.reading.recommended %}{{ reference(r) }}{% endfor %}
+    {% for r in s.reading[key] %}{{ reference(r) }}{% endfor %}
   </ul>
-
-  <h3 class="sec__sub">{{ t.course.further }}</h3>
-  <ul class="reading">
-    {% for r in s.reading.further %}{{ reference(r) }}{% endfor %}
-  </ul>
+  {% endfor %}
 
   {% for kind in ['video', 'podcast', 'data', 'text'] %}
-  {% set items = s.links | selectattr('kind', 'equalto', kind) | list %}
+  {% set items = s.get('links', []) | selectattr('kind', 'equalto', kind) | list %}
   {% if items %}
   <h3 class="sec__sub">{{ t.course.kind[kind] }}</h3>
   <ul class="reading reading--links">

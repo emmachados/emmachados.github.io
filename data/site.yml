@@ -52,4 +52,5 @@ pages:
   software:     {en: "/software/",     es: "/es/software/",        nav: true}
   service:      {en: "/service/",      es: "/es/actividades/",     nav: true}
   cv:           {en: "/cv/",           es: "/es/cv/",              nav: true}
-  course_mq:    {en: "/teaching/metodologias-queer/", es: "/es/docencia/metodologias-queer/", nav: false}
+  course_mq:    {en: "/teaching/metodologias-queer/", es: "/es/docencia/metodologias-queer/", nav: false, template: course}
+  course_lt:    {en: "/teaching/linguistica-teorica/", es: "/es/docencia/linguistica-teorica/", nav: false, template: course}

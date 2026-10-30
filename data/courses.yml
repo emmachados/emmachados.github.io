@@ -741,3 +741,92 @@
       title: On normal life
       medium: Interview
       site: Society and Space
+
+- id: linguistica-teorica
+  page: course_lt
+  teaching_id: usal-linguistica-teorica
+  title: 'Lingüística teórica: lecturas obligatorias'
+  institution: Universidad de Salamanca
+  detail:
+    en: 'My part of Lingüística teórica, a third-year course of the Grado en Filología Hispánica that I teach
+      with Jesús Fernández: the four set readings, worked through in five two-hour sessions. Each session
+      opens with a short handwritten test that applies the reading to new examples, followed by group work
+      on further data. The slides for each session are added here after it has been taught.'
+    es: 'Mi parte de Lingüística teórica, asignatura de tercer curso del Grado en Filología Hispánica que
+      imparto con Jesús Fernández: las cuatro lecturas obligatorias, que se trabajan en cinco sesiones de
+      dos horas. Cada sesión comienza con una prueba breve y manuscrita en la que se aplica la lectura a
+      ejemplos nuevos, tras la cual se trabaja en grupos sobre otros datos. Las diapositivas de cada sesión
+      se añaden aquí después de impartirla.'
+  years: 2026-2027
+  hours: 10
+  sessions:
+  - n: 1
+    title:
+      en: Bosque and Gutiérrez-Rexach, §§ 1.1-1.2
+      es: Bosque y Gutiérrez-Rexach, §§ 1.1-1.2
+    deck: linguistica-teorica-1-que-es-la-sintaxis.pdf
+    pages: 32
+    reading:
+      set:
+      - type: chapter
+        year: 2009
+        authors: ["Bosque, I.", "Gutiérrez-Rexach, J."]
+        title: '¿Qué es la sintaxis? Caracterización y bases empíricas'
+        container: Fundamentos de sintaxis formal
+        publisher: Akal
+        pages: 11-27
+  - n: 2
+    title:
+      en: Bosque and Gutiérrez-Rexach, §§ 1.3-1.4
+      es: Bosque y Gutiérrez-Rexach, §§ 1.3-1.4
+    reading:
+      set:
+      - type: chapter
+        year: 2009
+        authors: ["Bosque, I.", "Gutiérrez-Rexach, J."]
+        title: '¿Qué es la sintaxis? Caracterización y bases empíricas'
+        container: Fundamentos de sintaxis formal
+        publisher: Akal
+        pages: 28-53
+  - n: 3
+    title:
+      en: Lorenzo, «Gramática generativa»
+      es: Lorenzo, «Gramática generativa»
+    reading:
+      set:
+      - type: chapter
+        year: 2015
+        authors: ["Lorenzo, G."]
+        title: Gramática generativa
+        container: Enciclopedia de lingüística hispánica
+        editors: ["Gutiérrez-Rexach, J."]
+        publisher: Routledge
+        pages: 138-150
+  - n: 4
+    title:
+      en: Mendívil-Giró, «Deconstruyendo las funciones sintácticas»
+      es: Mendívil-Giró, «Deconstruyendo las funciones sintácticas»
+    reading:
+      set:
+      - type: article
+        year: 2022
+        authors: ["Mendívil-Giró, J.-L."]
+        title: Deconstruyendo las funciones sintácticas
+        venue: Revista de Gramática Orientada a las Competencias
+        volume: '4'
+        issue: 1
+        pages: 20-39
+        doi: 10.5565/rev/regroc.62
+  - n: 5
+    title:
+      en: Ibarretxe-Antuñano and Valenzuela, ch. 1
+      es: Ibarretxe-Antuñano y Valenzuela, cap. 1
+    reading:
+      set:
+      - type: chapter
+        year: 2021
+        authors: ["Ibarretxe-Antuñano, I.", "Valenzuela, J."]
+        title: 'Lingüística y cognición: el lenguaje desde la lingüística cognitiva'
+        container: Lenguaje y cognición
+        publisher: Síntesis
+        pages: 11-42

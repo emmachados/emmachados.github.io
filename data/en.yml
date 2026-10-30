@@ -151,8 +151,10 @@ cv:
 
 course:
   materials: Slides
-  recommended: Recommended reading
-  further: Further reading
+  set_reading: Set reading
+  recommended_reading: Recommended reading
+  further_reading: Further reading
+  after_session: Slides after the session
   links: Video, audio and data
   kind:
     video: Video

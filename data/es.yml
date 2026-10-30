@@ -150,8 +150,10 @@ cv:
 
 course:
   materials: Diapositivas
-  recommended: Bibliografía recomendada
-  further: Bibliografía para ampliar
+  set_reading: Lectura obligatoria
+  recommended_reading: Bibliografía recomendada
+  further_reading: Bibliografía para ampliar
+  after_session: Diapositivas después de la sesión
   links: Vídeo, audio y datos
   kind:
     video: Vídeo

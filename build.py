@@ -290,7 +290,7 @@ def main():
     for lang in ("en", "es"):
         ctx = context(lang, site, copy, data, PRELOAD_FONTS)
         for page_id, meta in site["pages"].items():
-            tpl = env.get_template(f"{page_id}.html.j2")
+            tpl = env.get_template(f"{meta.get('template', page_id)}.html.j2")
             html = tpl.render(page=page_id, noindex=meta.get("noindex", False),
                               **ctx)
             rel = meta[lang].strip("/")
