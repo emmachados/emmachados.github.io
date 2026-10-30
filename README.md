@@ -50,6 +50,7 @@ and TeX Live, runs `build.py --cv`, and publishes `_site/` through GitHub Pages.
 | The slide decks under `static/teaching/` | CC BY-NC-SA 4.0 |
 | Footer sprites under `static/img/`, from PMD Collab's SpriteCollab archive | CC BY-NC 4.0, characters trademarked by Nintendo, Creatures and Game Freak |
 | Academicons glyphs inlined in `templates/partials/icons.html.j2` | SIL OFL 1.1 for the artwork, MIT for the code |
+| GitHub mark from Octicons, inlined in the same file | MIT, © GitHub Inc. The mark is a GitHub trademark |
 | Typefaces under `static/fonts/` and `cv/fonts/` | SIL OFL 1.1 |
 
 `LICENSE` carries the MIT text and the same summary.

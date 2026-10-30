@@ -31,6 +31,9 @@ profiles:
   - key: osf
     label: OSF
     url: https://osf.io/nmdf3/
+  - key: github
+    label: GitHub
+    url: https://github.com/emmachados
 
 photo:
   en: img/emma.webp
