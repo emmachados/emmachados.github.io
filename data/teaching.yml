@@ -8,6 +8,21 @@
   institution: Universidad de Salamanca
   years: "2024-"
 
+- id: usal-linguistica-teorica
+  kind: university
+  role:
+    en: Teaching Assistant
+    es: Docencia en el marco del contrato predoctoral
+  course: "Lingüística teórica"
+  programme: Grado en Filología Hispánica
+  institution: Universidad de Salamanca
+  years: "2026-2027"
+  materials:
+    - file: linguistica-teorica-1-que-es-la-sintaxis.pdf
+      label:
+        en: "Slides for the first reading session, «¿Qué es la sintaxis?» (PDF, in Spanish)"
+        es: "Diapositivas de la primera sesión de lecturas, «¿Qué es la sintaxis?» (PDF)"
+
 - id: usal-linguistica-general
   kind: university
   role:

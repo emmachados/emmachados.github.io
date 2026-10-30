@@ -172,8 +172,10 @@ course:
 software:
   title: Software
   intro: >-
-    Research tools written for my own work and for collaborators. None of these
-    has a public release yet, so this page carries descriptions and no downloads.
+    Research software I have developed for my own work and for the people I
+    work with. Each entry links to its GitHub repository, which holds the
+    source code and the releases.
+  repo_link: Source code and releases on GitHub
 
 education:
   title: Education

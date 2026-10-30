@@ -171,9 +171,11 @@ course:
 software:
   title: Software
   intro: >-
-    Herramientas de investigación escritas para mi propio trabajo y para
-    colaboradores. Ninguna tiene todavía una versión pública, de modo que esta
-    página recoge descripciones y ninguna descarga.
+    Aplicaciones que he desarrollado para mi investigación y para la de las
+    personas con las que colaboro. El enlace de cada una lleva a su
+    repositorio de GitHub, donde están el código fuente y las versiones
+    publicadas.
+  repo_link: Código fuente y versiones en GitHub
 
 education:
   title: Formación

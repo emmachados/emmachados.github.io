@@ -49,7 +49,7 @@ pages:
   publications: {en: "/publications/", es: "/es/publicaciones/",   nav: true}
   talks:        {en: "/talks/",        es: "/es/comunicaciones/",  nav: true}
   teaching:     {en: "/teaching/",     es: "/es/docencia/",        nav: true}
+  software:     {en: "/software/",     es: "/es/software/",        nav: true}
   service:      {en: "/service/",      es: "/es/actividades/",     nav: true}
   cv:           {en: "/cv/",           es: "/es/cv/",              nav: true}
-  software:     {en: "/software/",     es: "/es/software/",        nav: false, noindex: true}
   course_mq:    {en: "/teaching/metodologias-queer/", es: "/es/docencia/metodologias-queer/", nav: false}

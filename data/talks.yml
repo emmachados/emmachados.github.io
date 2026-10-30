@@ -1,3 +1,21 @@
+- id: ajl2026-voicing
+  date_start: 2026-10-07
+  date_end: 2026-10-09
+  authors: ["Machado de Souza, E."]
+  title: "Voicing femininity: Acoustic pathways in transfeminine Spanish speech"
+  event: XL Congreso Internacional de la Asociación de Jóvenes Lingüistas
+  host: Universidad de Salamanca
+  kind: oral
+  lines: [transqueer, sociophonetics]
+- id: lavlang32-names
+  date_start: 2026-09-02
+  date_end: 2026-09-04
+  authors: ["Machado de Souza, E.", "Vinagre Vázquez, J."]
+  title: "What’s in a (trans) name? Indirect sociolinguistic profiling of personal names chosen by trans individuals in Spain"
+  event: Lavender Languages and Linguistics 32
+  host: University of Edinburgh
+  kind: oral
+  lines: [transqueer]
 - id: sel2026-llm
   date_start: 2026-01-26
   date_end: 2026-01-29

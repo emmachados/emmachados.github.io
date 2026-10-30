@@ -1,35 +1,151 @@
 - id: openphon
   name: openphon
+  repo: https://github.com/emmachados/openphon
   status:
-    en: In development
-    es: En desarrollo
+    en: Release candidate 0.1.0-rc.5
+    es: Versión candidata 0.1.0-rc.5
+  licence: Apache-2.0
   summary:
-    en: A phonetics workbench for phone-level analysis, written in Flutter and Rust. Segmentation, measurement and TextGrid interoperability in a desktop application.
-    es: Un banco de trabajo fonético para el análisis a nivel de segmento, escrito en Flutter y Rust. Segmentación, medición e interoperabilidad con TextGrid en una aplicación de escritorio.
+    en: >-
+      A phonetic analysis app for Android phones and tablets. It records or
+      imports WAV files and shows the waveform, the spectrogram and the F0,
+      intensity and formant tracks, aligned in time. Segmentation is done by
+      touch on interval or point tiers and saved as a Praat TextGrid. For each
+      interval, the duration, F0, intensity and the first three formants at the
+      midpoint export to CSV, together with the analysis settings and the
+      SHA-256 checksum of the source audio. Pitch-tracking errors can be
+      corrected by hand, frame by frame. The exports and the voice report,
+      which gives jitter, shimmer and HNR, then use the corrected values. All
+      analysis runs on the device, in a Rust core that takes Praat's settings
+      as its defaults. The measurements have been compared with Praat 6.1.38
+      on synthesized signals and on an evaluation set of 192 public Spanish
+      recordings, where, at the tested settings, voicing decisions agree on 96.24% of frames and the median F0 difference is 0.32 Hz. These figures measure agreement with Praat under those conditions. An iOS version can be built from the
+      source but is not distributed.
+    es: >-
+      Aplicación para hacer análisis fonético en teléfonos y tablets Android.
+      Graba audio o importa archivos WAV y muestra, alineados en el tiempo, el
+      oscilograma, el espectrograma y las curvas de f0, intensidad y
+      formantes. Sobre esa misma vista la señal se segmenta con el dedo en
+      niveles de intervalos o de puntos, que se guardan como TextGrid de Praat.
+      De cada intervalo se exportan a CSV la duración, la f0, la intensidad y
+      los tres primeros formantes en el punto medio, junto con los parámetros
+      del análisis y la suma de comprobación SHA-256 del audio original. Si el
+      detector se equivoca al estimar la f0, la curva puede corregirse a mano
+      trama por trama. Los valores corregidos son los que utilizan después la
+      exportación y el informe de voz, que calcula jitter, shimmer y HNR. Todo
+      este análisis se ejecuta en el propio dispositivo, en un núcleo
+      programado en Rust que toma como valores predeterminados los de Praat.
+      Las mediciones se han contrastado con las de esa misma referencia, Praat
+      6.1.38, en señales sintéticas y en un conjunto de evaluación de 192
+      grabaciones públicas en español: con los parámetros probados, la decisión entre trama sonora y sorda coincide en el 96,24 % de las tramas y la diferencia mediana de f0 es de 0,32 Hz. Esas cifras miden la concordancia con Praat en esas condiciones. Por ahora solo se distribuye para Android, aunque la versión
+      para iOS puede compilarse desde el código fuente.
+  shots:
+    - file: openphon-analysis.webp
+      width: 560
+      height: 1111
+      alt:
+        en: "openphon's analysis view of the Spanish sentence «El Salvador cuenta ahora con una sinagoga», with the waveform, a spectrogram with formant and F0 tracks, a word tier and the cursor readout on the first vowel of «ahora»."
+        es: "Vista de análisis de openphon con la frase «El Salvador cuenta ahora con una sinagoga»: oscilograma, espectrograma con las curvas de formantes y de f0, un nivel de palabras y la lectura del cursor en la primera vocal de «ahora»."
+      caption:
+        en: "A Common Voice sentence (CC0) with a word tier and the cursor readout"
+        es: "Frase de Common Voice (CC0) con un nivel de palabras y la lectura del cursor"
+    - file: openphon-pitch.webp
+      width: 560
+      height: 1111
+      alt:
+        en: "openphon's pitch editing on «Salvador cuenta», with the F0 track and the candidate periodicities of each frame drawn as rings."
+        es: "Corrección de la f0 en openphon sobre «Salvador cuenta», con la curva de f0 y los candidatos de cada trama dibujados como círculos."
+      caption:
+        en: "Pitch editing, with the F0 candidates of each frame"
+        es: "Corrección de la f0, con los candidatos de cada trama"
 
-- id: elena
-  name: elena
+- id: marcadores-de-paula
+  name: Marcadores de Paula
+  repo: https://github.com/emmachados/marcadores-de-paula
   status:
-    en: In use, distributed to collaborators
-    es: En uso, distribuida a colaboradores
+    en: Version 0.9.1
+    es: Versión 0.9.1
+  licence:
+    en: GPL-3.0-or-later
+    es: GPL-3.0 o posterior
   summary:
-    en: A transcription and annotation pipeline for Spanish clinical interviews. Whisper large-v3 transcription, morphosyntactic and disfluency analysis, and export to CHAT, ELAN, Praat TextGrid and SRT.
-    es: Una cadena de transcripción y anotación para entrevistas clínicas en español. Transcripción con Whisper large-v3, análisis morfosintáctico y de disfluencias, y exportación a CHAT, ELAN, TextGrid de Praat y SRT.
+    en: >-
+      A desktop application for Windows and Apple-silicon Macs that transcribes recordings and lets the result be checked and annotated. It
+      downloads audio or video from a link or opens local files, transcribes
+      them on the user's own computer with WhisperX (Whisper large-v3 or
+      large-v3-turbo), aligns every word to the audio and separates speakers
+      with pyannote. In the review editor each turn can be played on its own to correct its text, its speaker or its boundaries. The original machine transcript is kept beside the
+      reviewed one. The application was made for research on discourse markers
+      in spoken Spanish, so it applies no cleanup of its own to the repetitions, filled pauses or false starts the recogniser keeps. An annotation layer kept apart from the text marks them, with an editable codebook of 27 labels and 21 functions that draws on the Val.Es.Co. conventions. The transcript exports to several formats, Praat TextGrid and ELAN EAF among them.
+    es: >-
+      Aplicación de escritorio para Windows y para Mac con chip de Apple que transcribe grabaciones y permite revisar y anotar el resultado.
+      Las grabaciones se descargan desde un enlace o se abren desde archivos
+      locales y se transcriben en el propio ordenador con WhisperX (modelos
+      large-v3 y large-v3-turbo de Whisper), que alinea cada palabra con el
+      audio; la separación de hablantes corre a cargo de pyannote. En el editor de revisión cada turno puede reproducirse por separado para corregir el texto, el hablante o los límites del turno. Junto a la versión revisada se
+      conserva la transcripción automática original. La aplicación nació para
+      estudiar los marcadores del discurso en el español hablado, por lo que no aplica ninguna limpieza propia a las repeticiones, vacilaciones o falsos comienzos que recoja el reconocedor. Para anotarlos dispone de una capa independiente del texto, con un libro de códigos editable de 27 etiquetas y 21 funciones que toma como referencia las convenciones de Val.Es.Co. La transcripción se exporta a varios formatos, entre ellos TextGrid de Praat y EAF de ELAN.
+  shots:
+    - file: marcadores-review.webp
+      width: 1600
+      height: 946
+      wide: true
+      alt:
+        en: "The Marcadores de Paula review editor, with timed turns labelled Interviewer and Participant and the filled pause «eh» highlighted in the selected turn."
+        es: "El editor de revisión de Marcadores de Paula, con turnos de Interviewer y Participant marcados en el tiempo. En el turno seleccionado aparece resaltada la vacilación «eh»."
+      caption:
+        en: "Review of a synthetic interview"
+        es: "Revisión de una entrevista sintética"
 
-- id: clemma
-  name: Clemma
+- id: atalaya
+  name: ATALAYA
+  repo: https://github.com/emmachados/atalaya
   status:
-    en: In development
-    es: En desarrollo
+    en: Version 1.7.4, Android 7.0 or later
+    es: Versión 1.7.4, Android 7.0 o posterior
   summary:
-    en: A document explainer for migrants and people with reading difficulties. A photographed official letter is rendered into easy-read fields, each anchored to a verbatim quotation checked against the source text.
-    es: Un explicador de documentos para personas migrantes y con dificultades de lectura. Una carta oficial fotografiada se convierte en campos de lectura fácil, cada uno anclado a una cita literal verificada contra el texto original.
-
-- id: depvoz
-  name: depvoz
-  status:
-    en: Research code
-    es: Código de investigación
-  summary:
-    en: An acoustic feature pipeline for a corpus of picture-description speech, built for work on depression and speech. The corpus itself is health data and is not distributed.
-    es: Una cadena de extracción de rasgos acústicos para un corpus de descripción de láminas, construida para el trabajo sobre depresión y habla. El corpus es dato de salud y no se distribuye.
+    en: >-
+      An Android app for language portraits: each participant colours a body
+      silhouette with the languages in their life and explains where each one
+      goes and why. ATALAYA records that explanation while the portrait is
+      drawn and transcribes it on the phone with Whisper small, without sending the audio to any server. The drawing, the audio, the transcript and the
+      participant's details of each portrait are stored under a participant
+      code and can be shared from the app. It was developed in the linGAP
+      research group at the Universidad de Salamanca by María Carmen Fernández
+      Juncal, Olga Ivanova, Pedro Álvarez Mosquera and me; I did the
+      programming. It is registered in the Registro Central de la Propiedad
+      Intelectual (entry 00/2026/5495, effective 30 June 2026), with the
+      Universidad de Salamanca as holder of the exploitation rights.
+    es: >-
+      Aplicación para Android con la que se elaboran retratos lingüísticos:
+      cada participante colorea una silueta humana con las lenguas de su vida
+      y explica dónde sitúa cada una y por qué. Esa explicación la graba
+      ATALAYA mientras se dibuja el retrato y la transcribe en el propio teléfono con Whisper small, sin enviar el audio a ningún servidor.
+      El dibujo, el audio, la transcripción y los datos sociodemográficos de
+      cada retrato se guardan bajo un código de participante y pueden
+      compartirse desde la aplicación. La desarrollamos en el grupo de
+      investigación linGAP de la Universidad de Salamanca María Carmen
+      Fernández Juncal, Olga Ivanova, Pedro Álvarez Mosquera y yo, que me
+      ocupé de la programación. Está inscrita en el Registro Central de la
+      Propiedad Intelectual (asiento 00/2026/5495, con efectos desde el 30 de
+      junio de 2026), con la Universidad de Salamanca como titular de los
+      derechos de explotación.
+  shots:
+    - file: atalaya-inicio.webp
+      width: 560
+      height: 1120
+      alt:
+        en: "ATALAYA's start screen, with the linGAP and Universidad de Salamanca marks and buttons to create a new portrait or open saved ones."
+        es: "Pantalla de inicio de ATALAYA, con los logotipos de linGAP y de la Universidad de Salamanca y los botones para crear un retrato o abrir los guardados."
+      caption:
+        en: "Start screen"
+        es: "Pantalla de inicio"
+    - file: atalaya-grabando.webp
+      width: 560
+      height: 1120
+      alt:
+        en: "ATALAYA's drawing canvas with a coloured silhouette while a recording runs at twelve seconds."
+        es: "Lienzo de dibujo de ATALAYA con una silueta coloreada mientras la grabación avanza por el segundo doce."
+      caption:
+        en: "Recording while the portrait is drawn"
+        es: "Grabación mientras se dibuja el retrato"

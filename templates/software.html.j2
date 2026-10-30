@@ -5,14 +5,25 @@
 <h1 class="doc__title">{{ t.software.title }}</h1>
 <p class="doc__intro">{{ t.software.intro }}</p>
 
-<ul class="entries">
+<div class="apps">
   {% for s in software %}
-  <li class="entry">
-    <p class="entry__title">{{ s.name }}</p>
-    <p>{{ s.summary[lang] }}</p>
-    <p class="tags"><span class="tag">{{ s.status[lang] }}</span></p>
-  </li>
+  <section class="app" aria-labelledby="app-{{ s.id }}">
+    <div class="plate{% if s.shots | selectattr('wide', 'defined') | list %} plate--wide{% endif %}">
+      {% for shot in s.shots %}
+      <figure class="plate__shot">
+        <img src="/static/img/software/{{ shot.file }}" width="{{ shot.width }}" height="{{ shot.height }}" alt="{{ shot.alt[lang] }}" loading="lazy" decoding="async">
+        <figcaption>{{ shot.caption[lang] }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    <div class="app__text">
+      <h2 class="app__name" id="app-{{ s.id }}">{{ s.name }}</h2>
+      <p class="app__desc">{{ s.summary[lang] }}</p>
+      <p class="entry__marks"><span class="mark">{{ s.status[lang] }}</span>{% if s.get('licence') %}<span class="mark">{{ s.licence[lang] if s.licence is mapping else s.licence }}</span>{% endif %}</p>
+      <p class="app__link"><a href="{{ s.repo }}">{{ t.software.repo_link }}</a></p>
+    </div>
+  </section>
   {% endfor %}
-</ul>
+</div>
 </div>
 {% endblock %}
