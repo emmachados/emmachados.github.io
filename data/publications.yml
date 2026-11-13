@@ -32,12 +32,14 @@
 - id: kkf-2026
   type: article
   year: 2026
-  status: forthcoming
+  status: published
   authors: ["Machado de Souza, E."]
   title: "Hacking the biomedical discourse: Trans digital counterpublics and the self-governance of health"
   venue: "Kvinder, Køn & Forskning"
-  issue: 3
-  url: null
+  volume: 39
+  issue: 1
+  pages: "81-100"
+  url: https://tidsskrift.dk/KKF/article/view/155907
   peer_reviewed: true
   indicators: []
   lines: [transqueer, discourse]
