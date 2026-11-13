@@ -26,7 +26,7 @@ The pages use absolute paths (`/static/...`). Serve `_site/` over HTTP.
 | --- | --- |
 | `data/site.yml` | identity, profile links, the page-id to path map for both languages |
 | `data/en.yml`, `data/es.yml` | every translatable string. Both files carry the same keys |
-| `data/publications.yml` | 8 entries, structured fields |
+| `data/publications.yml` | 9 entries, structured fields |
 | `data/talks.yml` | 29 entries |
 | `data/awards.yml`, `data/courses.yml`, `data/education.yml`, `data/experience.yml`, `data/projects.yml`, `data/service.yml`, `data/software.yml`, `data/teaching.yml` | the remaining record |
 | `templates/` | Jinja2, rendered once per language |

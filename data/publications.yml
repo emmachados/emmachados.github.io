@@ -1,17 +1,33 @@
 - id: philologia-2027
   type: article
   year: 2027
-  status: forthcoming
+  status: in_press
   authors: ["Machado de Souza, E."]
   title: "La feminización vocal en español: lagunas de validación en los protocolos clínicos"
   venue: Philologia Hispalensis
   volume: 41
   issue: 1
+  pages: "55-76"
   peer_reviewed: true
   indicators: [Q3, C1, "A+"]
   lines: [transqueer, clinical]
   lang: es
   featured: true
+
+- id: routledge-meg-2027
+  type: chapter
+  year: 2027
+  status: forthcoming
+  authors: ["Machado de Souza, E.", "Ivanova, O."]
+  title: "La magnetoencefalografía (MEG)"
+  container: "Métodos experimentales para la lingüística hispánica"
+  editors: ["Loureda Lamas, Ó.", "Cruz Rubio, A.", "Ivanova, O.", "Gelormini Lezama, C.", "Teucher, M.", "Hernández Pérez, C."]
+  publisher: Routledge
+  url: https://www.routledge.com/Metodos-experimentales-para-la-linguistica-hispanica/LouredaLamas-CruzRubio-Ivanova-GelorminiLezama-Teucher-HernandezPerez/p/book/9781041066408
+  peer_reviewed: true
+  indicators: []
+  lines: [clinical]
+  lang: es
 
 - id: kkf-2026
   type: article
